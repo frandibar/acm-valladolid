@@ -1,0 +1,69 @@
+Data set 1:
+     Citizen at (0,0) is robbed.
+
+Data set 2:
+     Citizen at (0,0) is robbed.
+
+Data set 3:
+     Citizen at (0,0) is safe.
+
+Data set 4:
+     Citizen at (20,0) is safe.
+
+Data set 5:
+     Citizen at (0,2) is safe.
+
+Data set 6:
+     Citizen at (0,3) is neither.
+
+Data set 7:
+     Citizen at (0,2) is neither.
+
+Data set 8:
+     Citizen at (0,2) is neither.
+
+Data set 9:
+     Citizen at (2,0) is neither.
+
+Data set 10:
+     Citizen at (2,0) is neither.
+
+Data set 11:
+     Citizen at (0,0) is robbed.
+
+Data set 12:
+     Citizen at (0,0) is safe.
+
+Data set 13:
+     Citizen at (0,3) is neither.
+     Citizen at (3,0) is neither.
+
+Data set 14:
+     Citizen at (0,0) is robbed.
+     Citizen at (1,1) is neither.
+
+Data set 15:
+     Citizen at (0,0) is safe.
+     Citizen at (1,1) is neither.
+
+Data set 16:
+     Citizen at (0,0) is safe.
+     Citizen at (1,0) is safe.
+     Citizen at (2,0) is neither.
+     Citizen at (0,1) is robbed.
+     Citizen at (0,2) is robbed.
+     Citizen at (0,3) is neither.
+
+Data set 17:
+     Citizen at (0,0.5) is safe.
+
+Data set 18:
+     Citizen at (5,4.9) is safe.
+     Citizen at (15,15) is robbed.
+
+Data set 19:
+     Citizen at (5,5) is safe.
+     Citizen at (15,15) is robbed.
+
+Data set 20:
+     Citizen at (40,40) is neither.

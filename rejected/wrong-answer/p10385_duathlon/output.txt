@@ -1,0 +1,5 @@
+The cheater can win by 2156 seconds with r = 6.59km and k = 93.41km.
+The cheater can win by 2195 seconds with r = 0.00km and k = 100.00km.
+The cheater can win by 612 seconds with r = 14.29km and k = 85.71km.
+The cheater cannot win.
+The cheater can win by 32727 seconds with r = 0.00km and k = 100.00km.

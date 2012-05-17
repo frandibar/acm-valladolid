@@ -1,0 +1,4 @@
+p191 Intersection
+
+este problema se puede resolver utilizando la funcion Intersect
+entre dos lineas, explicada en la pag 313 del libro Algorithms de Sedgewick

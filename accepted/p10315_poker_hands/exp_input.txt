@@ -1,0 +1,30 @@
+
+B: high A 6 4 3 1		W: 1 pair de A 6 4 3 2  White wins.
+B: high A 5 4 2 1		W: 1 pair de Q J 9 5 2 Black wins.
+B: 1 pair de A 5 4 1	W: 1 pair de A J 9 5 White wins.
+B: 1 pair de A 5 4 1	W: 1 pair de Q J 9 5 Black wins.
+B: 2 pairs de A 1 J	W: 2 pairs de A q 2 White wins.
+B: 2 pairs de A 1 J	W: 2 pairs de k q 2 Black wins.
+B: 3 of kind de 4	W: 3 of kind de j 	White wins.
+B: straight de 2 3 4 5 6	W: straight de 1 2 3 4 5 Black wins.
+B: flush de K 9 5 3 1	W: flush de A Q 5 3 2 White wins.
+B: fullhouse de 9	W: fullhouse de Q	White wins.
+B: escalera de 5	W: 4 of kind de A	Black wins.
+B: 4 of kind de 9	W: 4 of kind de Q	White wins.
+B: escalera de 6	W: escalera de 7	White wins.
+B: escalera de A	W: escalera de A	Tie.
+
+
+
+
+
+8 StraightFlush
+7 FourOfKind
+6 FullHouse
+5 Flush
+4 Straight
+3 ThreeOfKind
+2 TwoPairs
+1 Pair
+0 HighCard
+

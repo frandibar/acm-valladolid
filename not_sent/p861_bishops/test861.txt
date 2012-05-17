@@ -1,0 +1,41 @@
+That's the input: 
+
+Code: 
+8 6 
+4 4 
+8 15 
+8 12 
+8 0 
+5 1 
+5 5 
+5 9 
+8 10 
+1 1 
+1 0 
+7 8 
+0 0 
+
+
+And here is the output: 
+
+Code: 
+5599888 
+260 
+0 
+489536 
+0 
+25 
+3368 
+0 
+12448832 
+1 
+0 
+867328 
+
+
+your answers are right except for the following inputs: 
+8 0 
+1 0 
+
+your answer is 0, but the correct answer is 1.
+

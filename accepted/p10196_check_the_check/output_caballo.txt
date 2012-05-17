@@ -1,0 +1,6 @@
+Game #1: black king is in check
+Game #2: black king is in check
+Game #3: white king is in check
+Game #4: white king is in check
+Game #5: white king is in check
+Game #6: white king is in check

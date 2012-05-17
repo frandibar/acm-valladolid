@@ -1,0 +1,5 @@
+AB+CD+EF++GH+++@B+CD+EF+GH+I++++@
+B@C+D-E+
+BC+D-
+BC+DE-+
+AB+CD+-

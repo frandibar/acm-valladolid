@@ -1,0 +1,25 @@
+**************************** START DEBUG *****************************
+Non Directed Graph : 
+
+Vertexes (5):
+
+A,a
+B,b.
+Erdos, P.
+A,a.
+B
+
+Edges (6):
+[Origin Vertex] -> [Destiny Vertex]: [Weight]
+
+A,a	->	B,b.:	1
+B,b.	->	A,a:	1
+Erdos, P.	->	A,a.:	1
+Erdos, P.	->	B:	1
+A,a.	->	Erdos, P.:	1
+B	->	Erdos, P.:	1
+***************************** END DEBUG ******************************
+Scenario 1
+Erdos, P. 0
+A,a. 1
+B,b. infinity

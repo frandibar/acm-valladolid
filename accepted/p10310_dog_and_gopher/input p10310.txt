@@ -1,0 +1,52 @@
+Input 
+Code: 
+
+0 0 0 0 0 
+
+11 0 0 0 0 
+0.001 0 
+0 0.001 
+-0.001 0 
+0 -0.001 
+5 4 
+-10000 -10000 
+0 0 
+0 0 
+0 0 
+0 0 
+0 0 
+
+3 3 4 -10 0 
+-10000 -10000 
+0 0 
+3 4 
+
+3 3 4 -9.999 0 
+-10000 -10000 
+0 0 
+-390 -390 
+
+1 1.000 1.000 2.000 2.000 
+1.500 1.500 
+  
+2 2.000 2.000 1.000 1.000 
+1.500 1.500 
+2.500 2.500 
+
+ 
+
+OUtput 
+Code: 
+
+The gopher cannot escape. 
+The gopher can escape through the hole at (0.000,0.000). 
+The gopher can escape through the hole at (0.000,0.000). 
+The gopher cannot escape. 
+The gopher cannot escape. 
+The gopher can escape through the hole at (2.500,2.500). 
+
+ 
+People, perhaps this may be the most useful tip on getting your 10310 program to AC. First of all, you can use doubles (no need to use long long and multiply input by 1000 blahblah). Secondly, when the dog & gopher reach the hole at same time, it's still considered a successful escape. Lastly, and definitely NOT the least, if you are lazy like me and didn't take sqrt when calculating distances, then when you compare the dog & gopher distances, remember to multiply gopher distance by 4 (or divide dog distance by 4). Multiplying/dividing by 2 doesn't work if you HAVE NOT taken square root (and that's how I keep getting WA at first). 
+
+ 
+

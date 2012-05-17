@@ -1,0 +1,1884 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0105)http://online-judge.uva.es/board/viewtopic.php?t=467&highlight=10070&sid=e443d3bf297239c03c2e39c22dae0e54 -->
+<HTML dir=ltr><HEAD><TITLE>online-judge.uva.es :: View topic - Problem 10070 leap year...</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META http-equiv=Content-Style-Type content=text/css><LINK 
+title="online-judge.uva.es Forum Index" 
+href="./index.php?sid=e443d3bf297239c03c2e39c22dae0e54" rel=top><LINK 
+title=Search href="./search.php?sid=e443d3bf297239c03c2e39c22dae0e54" 
+rel=search><LINK title=FAQ href="./faq.php?sid=e443d3bf297239c03c2e39c22dae0e54" 
+rel=help><LINK title=Memberlist 
+href="./memberlist.php?sid=e443d3bf297239c03c2e39c22dae0e54" rel=author><LINK 
+title="View previous topic" 
+href="viewtopic.php?t=467&amp;view=previous&amp;sid=e443d3bf297239c03c2e39c22dae0e54" 
+rel=prev><LINK title="View next topic" 
+href="viewtopic.php?t=467&amp;view=next&amp;sid=e443d3bf297239c03c2e39c22dae0e54" 
+rel=next><LINK title="Volume C" 
+href="viewforum.php?f=9&amp;sid=e443d3bf297239c03c2e39c22dae0e54" rel=up><!-- link rel="stylesheet" href="templates/subSilver/subSilver.css" type="text/css" -->
+<STYLE type=text/css>@import url( templates/subSilver/formIE.css );
+BODY {
+	SCROLLBAR-FACE-COLOR: #dee3e7; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #dee3e7; SCROLLBAR-3DLIGHT-COLOR: #d1d7dc; SCROLLBAR-ARROW-COLOR: #006699; SCROLLBAR-TRACK-COLOR: #efefef; SCROLLBAR-DARKSHADOW-COLOR: #98aab1; BACKGROUND-COLOR: #e5e5e5
+}
+FONT {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TH {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+P {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A:link {
+	COLOR: #006699
+}
+A:active {
+	COLOR: #006699
+}
+A:visited {
+	COLOR: #006699
+}
+A:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+HR {
+	BORDER-RIGHT: #d1d7dc 0px solid; BORDER-TOP: #d1d7dc 1px solid; BORDER-LEFT: #d1d7dc 0px solid; BORDER-BOTTOM: #d1d7dc 0px solid; HEIGHT: 0px
+}
+.bodyline {
+	BORDER-RIGHT: #98aab1 1px solid; BORDER-TOP: #98aab1 1px solid; BORDER-LEFT: #98aab1 1px solid; BORDER-BOTTOM: #98aab1 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.bodylinetlr {
+	BORDER-RIGHT: #98aab1 1px solid; BORDER-TOP: #98aab1 1px solid; BORDER-LEFT: #98aab1 1px solid; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #ffffff
+}
+.forumline {
+	BORDER-RIGHT: #006699 2px solid; BORDER-TOP: #006699 2px solid; BORDER-LEFT: #006699 2px solid; BORDER-BOTTOM: #006699 2px solid; BACKGROUND-COLOR: #ffffff
+}
+TD.row1 {
+	BACKGROUND-COLOR: #efefef
+}
+TD.row2 {
+	BACKGROUND-COLOR: #dee3e7
+}
+TD.row3 {
+	BACKGROUND-COLOR: #d1d7dc
+}
+TD.rowpic {
+	BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic2.jpg); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic3.gif); COLOR: #ffa34f; HEIGHT: 25px; BACKGROUND-COLOR: #006699
+}
+TD.cat {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catHead {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catSides {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catLeft {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catRight {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catBottom {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.cat {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catHead {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thHead {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thSides {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thTop {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thLeft {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thRight {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thBottom {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thCornerL {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thCornerR {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TD.row3Right {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; BACKGROUND-COLOR: #d1d7dc
+}
+TD.spaceRow {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; BACKGROUND-COLOR: #d1d7dc
+}
+TH.thHead {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catHead {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thSides {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catSides {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.spaceRow {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thRight {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catRight {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.row3Right {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thLeft {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catLeft {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thTop {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thCornerL {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thCornerR {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+.maintitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; COLOR: #000000; LINE-HEIGHT: 120%; FONT-FAMILY: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.gen {
+	FONT-SIZE: 12px
+}
+.genmed {
+	FONT-SIZE: 11px
+}
+.gensmall {
+	FONT-SIZE: 10px
+}
+.gen {
+	COLOR: #000000
+}
+.genmed {
+	COLOR: #000000
+}
+.gensmall {
+	COLOR: #000000
+}
+A.gen {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.genmed {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.gensmall {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.gen:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+A.genmed:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+A.gensmall:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.mainmenu {
+	FONT-SIZE: 11px; COLOR: #000000
+}
+A.mainmenu {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.mainmenu:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.cattitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #006699; LETTER-SPACING: 1px
+}
+A.cattitle {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.cattitle:hover {
+	TEXT-DECORATION: underline
+}
+.forumlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #006699
+}
+A.forumlink {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.forumlink:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+A.nav {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.nav:hover {
+	TEXT-DECORATION: underline
+}
+.topictitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+A.topictitle:link {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.topictitle:visited {
+	COLOR: #5493b4; TEXT-DECORATION: none
+}
+A.topictitle:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.name {
+	FONT-SIZE: 11px; COLOR: #000000
+}
+.postdetails {
+	FONT-SIZE: 10px; COLOR: #000000
+}
+.postbody {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+A.postlink:link {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.postlink:visited {
+	COLOR: #5493b4; TEXT-DECORATION: none
+}
+A.postlink:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.code {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #006600; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Courier, 'Courier New', sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.quote {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #444444; LINE-HEIGHT: 125%; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.copyright {
+	FONT-SIZE: 10px; COLOR: #444444; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; LETTER-SPACING: -1px
+}
+A.copyright {
+	COLOR: #444444; TEXT-DECORATION: none
+}
+A.copyright:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+INPUT {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+TEXTAREA {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+SELECT {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+INPUT.post {
+	BACKGROUND-COLOR: #ffffff
+}
+TEXTAREA.post {
+	BACKGROUND-COLOR: #ffffff
+}
+SELECT {
+	BACKGROUND-COLOR: #ffffff
+}
+INPUT {
+	TEXT-INDENT: 2px
+}
+INPUT.button {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #efefef
+}
+INPUT.mainoption {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #fafafa
+}
+INPUT.liteoption {
+	FONT-WEIGHT: normal; BACKGROUND-COLOR: #fafafa
+}
+.helpline {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #dee3e7; BORDER-BOTTOM-STYLE: none
+}
+.BEAlinecomment {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #333333; BORDER-TOP-STYLE: none; FONT-FAMILY: Courier, 'Courier New', sans-serif; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #fafafa; BORDER-BOTTOM-STYLE: none
+}
+.BEAblockcomment {
+	BORDER-TOP-WIDTH: 1px; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 1px; COLOR: #333333; FONT-FAMILY: Courier, 'Courier New', sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+.BEAprepro {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 1px; COLOR: purple; FONT-FAMILY: Courier, 'Courier New', sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+.BEAselect {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 1px; COLOR: red; FONT-FAMILY: Courier, 'Courier New', sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+.BEAquote {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 1px; COLOR: blue; FONT-FAMILY: Courier, 'Courier New', sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+.BEAcategory_1 {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 1px; COLOR: blue; FONT-FAMILY: Courier, 'Courier New', sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+.BEAcategory_2 {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 1px; COLOR: black; FONT-FAMILY: Courier, 'Courier New', sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+.BEAcategory_3 {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; BORDER-BOTTOM-WIDTH: 1px; COLOR: #006600; FONT-FAMILY: Courier, 'Courier New', sans-serif; BORDER-RIGHT-WIDTH: 1px
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#5493b4 link=#006699 bgColor=#e5e5e5><A name=top></A>
+<TABLE class=bodylinetlr width="100%">
+  <TBODY>
+  <TR>
+    <TD><SPAN class=genmed><A href="http://online-judge.uva.es/"><B>Valladolid 
+      Programming Contest Site</B></A> : <A 
+      href="http://online-judge.uva.es/problemset/">Problemset Archive</A> . <A 
+      href="http://online-judge.uva.es/board/">Electronic Board</A> . <A 
+      href="http://online-judge.uva.es/contest/">Contests Hosting Service</A> . 
+      <A 
+  href="http://online-judge.uva.es/chat.html">Chat</A></SPAN></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=10 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=bodyline>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD><A 
+            href="http://online-judge.uva.es/board/index.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+            alt="online-judge.uva.es Forum Index" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/logo_valladolidboard.gif" 
+            vspace=1 border=0></A></TD>
+          <TD vAlign=center align=middle width="100%"><SPAN 
+            class=maintitle>online-judge.uva.es</SPAN><BR><SPAN class=gen>The 
+            <B>NEW</B> board for online-judge.uva.es site!<BR>&nbsp; </SPAN>
+            <TABLE cellSpacing=0 cellPadding=2 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=top noWrap align=middle><SPAN 
+                  class=mainmenu>&nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/watched_topics.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt="Watched Topics" hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_watch.gif" 
+                  width=12 border=0>Watched Topics</A></SPAN><SPAN 
+                  class=mainmenu>&nbsp; <!-- BMOD EASYCMS -->&nbsp;<A 
+                  class=mainmenu 
+                  href="http://online-judge.uva.es/board/cms_articles.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=Articles hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_articles.gif" 
+                  width=12 border=0>Articles</A>&nbsp; 
+                  <!-- EMOD EASYCMS -->&nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/faq.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=FAQ hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_faq.gif" 
+                  width=12 border=0>FAQ</A></SPAN><SPAN class=mainmenu>&nbsp; 
+                  &nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/search.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=Search hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_search.gif" 
+                  width=12 border=0>Search</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/memberlist.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=Memberlist hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_members.gif" 
+                  width=12 border=0>Memberlist</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/groupcp.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=Usergroups hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_groups.gif" 
+                  width=12 border=0>Usergroups</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/calendar.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=Calendar hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_calendar.gif" 
+                  width=12 border=0>Calendar</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/profile.php?mode=register&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=Register hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_register.gif" 
+                  width=12 border=0>Register</A></SPAN>&nbsp; </TD></TR>
+              <TR>
+                <TD vAlign=top noWrap align=middle height=25><SPAN 
+                  class=mainmenu>&nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/profile.php?mode=editprofile&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=Profile hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_profile.gif" 
+                  width=12 border=0>Profile</A>&nbsp; &nbsp; <A class=mainmenu 
+                  href="http://online-judge.uva.es/board/profile_options.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt=Preferences hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_profile.gif" 
+                  width=12 border=0>Preferences</A>&nbsp; &nbsp;<A 
+                  class=mainmenu 
+                  href="http://online-judge.uva.es/board/privmsg.php?folder=inbox&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt="Log in to check your private messages" hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_message.gif" 
+                  width=12 border=0>Log in to check your private 
+                  messages</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://online-judge.uva.es/board/login.php?sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  height=13 alt="Log in" hspace=3 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_mini_login.gif" 
+                  width=12 border=0>Log 
+          in</A>&nbsp;</SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR><!-- mod : categories hierarchy v 2 -->
+      <TABLE cellSpacing=2 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=nav vAlign=center align=left width="100%"><SPAN 
+            class=nav><A class=nav 
+            href="http://online-judge.uva.es/board/index.php?sid=e443d3bf297239c03c2e39c22dae0e54">online-judge.uva.es 
+            Forum Index</A>&nbsp;-&gt;&nbsp;<A class=nav 
+            href="http://online-judge.uva.es/board/index.php?c=1&amp;sid=e443d3bf297239c03c2e39c22dae0e54">Help 
+            on the Problemset</A>&nbsp;-&gt;&nbsp;<A class=nav 
+            href="http://online-judge.uva.es/board/viewforum.php?f=9&amp;sid=e443d3bf297239c03c2e39c22dae0e54">Volume 
+            C</A>&nbsp;-&gt;&nbsp;<A class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;sid=e443d3bf297239c03c2e39c22dae0e54">Problem 
+            10070 leap year...</A></SPAN></TD></TR>
+        <TR>
+          <TD vAlign=center noWrap align=left><SPAN class=nav><A 
+            href="http://online-judge.uva.es/board/posting.php?mode=newtopic&amp;f=9&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+            alt="Post new topic" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/post.gif" 
+            align=middle border=0></A>&nbsp;&nbsp;&nbsp;<A 
+            href="http://online-judge.uva.es/board/posting.php?mode=reply&amp;t=467&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+            alt="Reply to topic" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/reply.gif" 
+            align=middle border=0></A></SPAN></TD>
+          <TD vAlign=bottom noWrap align=right width="100%"><SPAN 
+            class=gensmall><B>Goto page <B>1</B>, <A 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;postdays=0&amp;postorder=asc&amp;highlight=10070&amp;start=15&amp;sid=e443d3bf297239c03c2e39c22dae0e54">2</A>&nbsp;&nbsp;<A 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;postdays=0&amp;postorder=asc&amp;highlight=10070&amp;start=15&amp;sid=e443d3bf297239c03c2e39c22dae0e54">Next</A></B></SPAN></TD></TR></TBODY></TABLE>
+      <TABLE class=forumline cellSpacing=1 cellPadding=3 width="100%" 
+        border=0><TBODY>
+        <TR align=right>
+          <TD class=catHead colSpan=2 height=28><SPAN class=nav><A class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;view=previous&amp;sid=e443d3bf297239c03c2e39c22dae0e54">View 
+            previous topic</A> :: <A class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;view=next&amp;sid=e443d3bf297239c03c2e39c22dae0e54">View 
+            next topic</A> &nbsp;</SPAN></TD></TR>
+        <TR>
+          <TH class=thLeft noWrap width=150 height=26>Author</TH>
+          <TH class=thRight noWrap>Message</TH></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=1623></A><B>soyoja</B></SPAN><BR><SPAN 
+            class=postdetails>Experienced poster<BR><BR><BR>Joined: 17 Feb 
+            2002<BR>Posts: 86<BR>Location: Seoul, South Korea</SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=1623&amp;sid=e443d3bf297239c03c2e39c22dae0e54#1623"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Tue May 
+                  07, 2002 4:47 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: Problem 10070 leap year...</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=1623&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>It's so strange problem. 
+                  Its code is so simple, and I programmed it <BR><BR>easy. But I 
+                  got wrong answer. I declared three boolean variables, 
+                  <BR><BR>( check leap year, hulucul, bulukulu ) and check each 
+                  of year. <BR><BR>Here is my pseudocode 
+                  <BR>===================================== <BR><BR></SPAN>
+                  <TABLE cellSpacing=1 cellPadding=3 width="90%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN class=genmed><B>C++:</B></SPAN></TD></TR>
+                    <TR>
+                      <TD class=code><SPAN class=BEAlinecomment>// leap means 
+                        leap year,</SPAN> <BR><SPAN class=BEAlinecomment>// hulu 
+                        means huluculu festival year</SPAN> <BR><SPAN 
+                        class=BEAlinecomment>// baku means bulukulu festival 
+                        year</SPAN> <BR><BR><SPAN class=BEAcategory_1>if</SPAN>( 
+                        year%4 == 0 ) <BR>{ <BR>&nbsp; &nbsp;<SPAN 
+                        class=BEAcategory_1>if</SPAN>( year%100 == 0 ) 
+                        <BR>&nbsp; &nbsp;&nbsp; &nbsp;<SPAN 
+                        class=BEAcategory_1>if</SPAN>( year%400 == 0 ) leap = 
+                        <SPAN class=BEAcategory_1>true</SPAN>; <BR>&nbsp; 
+                        &nbsp;&nbsp; &nbsp;<SPAN class=BEAcategory_1>else</SPAN> 
+                        leap = <SPAN class=BEAcategory_1>false</SPAN>; 
+                        <BR>&nbsp; &nbsp;<SPAN class=BEAcategory_1>else</SPAN> 
+                        leap = <SPAN class=BEAcategory_1>true</SPAN>; <BR>} 
+                        <BR><BR><SPAN class=BEAcategory_1>if</SPAN>( year%15 == 
+                        0 ) hulu = <SPAN class=BEAcategory_1>true</SPAN>; 
+                        <BR><SPAN class=BEAcategory_1>if</SPAN>( leap &amp;&amp; 
+                        year%55 == 0 ) bulu = <SPAN 
+                        class=BEAcategory_1>true</SPAN>; <BR><BR>check each year 
+                        type and print... </TD></TR></TBODY></TABLE><SPAN 
+                  class=postbody>===================================== 
+                  <BR><BR>Which of my code ( or solution ) is wrong? 
+                  <BR><BR>Please give me some hint . <BR><BR>Thanks 
+                  you.</SPAN><SPAN 
+        class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=176&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=176&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="http://www.cyworld.com/soyoja" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_www.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=176&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="MSN Messenger" alt="MSN Messenger" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_msnm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                  <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150><SPAN class=name><A 
+            name=1625></A><B>10153EN</B></SPAN><BR><SPAN class=postdetails>A 
+            great helper<BR><BR><BR>Joined: 06 Jan 2002<BR>Posts: 
+            148<BR>Location: Hong Kong</SPAN><BR></TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=1625&amp;sid=e443d3bf297239c03c2e39c22dae0e54#1625"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Tue May 
+                  07, 2002 6:23 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: HI~</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=1625&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>In the problem description 
+                  it states that "All the years will not be less than 2000 (to 
+                  avoid the earlier different rules for leap years). Please 
+                  don¡¦t assume anything else." <BR><BR>So what else have you 
+                  assumed? e.g. the maximum year in the input? <BR><BR>Hope can 
+                  help~</SPAN><SPAN 
+        class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row2 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=135&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=135&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="mailto:shto@cse.cuhk.edu.hk"><IMG 
+                  title="Send e-mail" alt="Send e-mail" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_email.gif" 
+                  border=0></A> <A href="http://tinchoino1.uhome.net/" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_www.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=38118232"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a>');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=38118232"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/38118232#pager"><img src="http://web.icq.com/whitepages/online?icq=38118232&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT><A 
+                  href="http://wwp.icq.com/scripts/search.dll?to=38118232"><IMG 
+                  title="ICQ Number" alt="ICQ Number" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_icq_add.gif" 
+                  border=0></A></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=1690></A><B>cyfra</B></SPAN><BR><SPAN class=postdetails>A great 
+            helper<BR><BR><BR>Joined: 22 Nov 2001<BR>Posts: 142<BR>Location: 
+            Gdynia, Poland</SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=1690&amp;sid=e443d3bf297239c03c2e39c22dae0e54#1690"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Tue May 
+                  14, 2002 1:56 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: Another problem</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=1690&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>Hi! <BR><BR>I have another 
+                  problem connected with this task... <BR>It is written : 
+                  <BR></SPAN>
+                  <TABLE cellSpacing=1 cellPadding=3 width="90%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN class=genmed><B>Quote:</B></SPAN></TD></TR>
+                    <TR>
+                      <TD class=quote>If the year is not leap year print the 
+                        line 'This is an ordinary 
+                  year.'</TD></TR></TBODY></TABLE><SPAN 
+                  class=postbody><BR><BR>But in the sample input it is 
+                  <BR><BR>4515 <BR><BR>And the answer : <BR><BR>This is huluculu 
+                  festival year. <BR><BR><BR>But this is not the leap year so 
+                  shouldn't be there: This is an ordinary year written ??? 
+                  <BR><BR>I have no idea... <BR><BR>Please tell me where my 
+                  mistake is, because I have no idea <IMG alt="" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_confused.gif" 
+                  border=0></SPAN><SPAN 
+            class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=79&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=79&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="mailto:cyfrapl@poczta.wp.pl"><IMG 
+                  title="Send e-mail" alt="Send e-mail" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_email.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150><SPAN class=name><A 
+            name=1694></A><B>Caesum</B></SPAN><BR><SPAN 
+            class=postdetails>Guru<BR><IMG alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/3efe00043cd66cc07c83f.gif" 
+            border=0><BR><BR>Joined: 02 May 2002<BR>Posts: 226<BR>Location: 
+            UK</SPAN><BR></TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=1694&amp;sid=e443d3bf297239c03c2e39c22dae0e54#1694"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Tue May 
+                  14, 2002 5:29 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: </SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=1694&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>only print 'ordinary year' 
+                  when none of the others applies, and handle big input, eg 
+                  987593475934857300000000</SPAN><SPAN 
+              class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row2 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=308&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=308&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="http://www.caesum.com/" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_www.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=2039></A><B>koniloni</B></SPAN><BR><SPAN class=postdetails>New 
+            poster<BR><BR><BR>Joined: 18 Apr 2002<BR>Posts: 15<BR></SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=2039&amp;sid=e443d3bf297239c03c2e39c22dae0e54#2039"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Fri Jun 
+                  07, 2002 7:11 am<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: Help problem 10070</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=2039&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>Can you tell me what is 
+                  wrong with my problem code? I get "wrong answer".This is my 
+                  code: <BR>#include&lt;stdio.h&gt; <BR>int main() <BR>{ 
+                  <BR>unsigned long year; <BR>int c; 
+                  <BR>while(scanf("%ld",&amp;year)==1) <BR>{ 
+                  <BR>if(year&gt;=2000) <BR>{ <BR>c=0; <BR>if(year%4==0 || 
+                  year%400==0 || year%55==0) <BR>{ <BR>printf("This is leap 
+                  year"); <BR>c++; <BR>} <BR>if(year%15==0) <BR>{ <BR>if(c==1) 
+                  <BR>printf("\nThis is huluculu festival year"); <BR>else 
+                  <BR>printf("This is huluculu festival year"); <BR>c++; <BR>} 
+                  <BR>if(year%55==0) <BR>{ <BR>if(c&gt;0) <BR>printf("\nThis is 
+                  buluculu festival year"); <BR>else <BR>printf("This is 
+                  buluculu festival year"); <BR>c++; <BR>} <BR>if(c==0) 
+                  <BR>printf("This is an ordinary year"); <BR>printf("\n\n"); 
+                  <BR>} <BR>} <BR>return 0; <BR>}</SPAN><SPAN 
+                  class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=266&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=266&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150><SPAN class=name><A 
+            name=2048></A><B>10153EN</B></SPAN><BR><SPAN class=postdetails>A 
+            great helper<BR><BR><BR>Joined: 06 Jan 2002<BR>Posts: 
+            148<BR>Location: Hong Kong</SPAN><BR></TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=2048&amp;sid=e443d3bf297239c03c2e39c22dae0e54#2048"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Fri Jun 
+                  07, 2002 6:04 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: </SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=2048&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>You have made the same 
+                  mistake~~ <BR><BR>Have you assumed unsigned long can store the 
+                  year value without overflow? The value can be larger. 
+                  <BR><BR>Remember, don't assume anything other than the 
+                  description stated.</SPAN><SPAN 
+              class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row2 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=135&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=135&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="mailto:shto@cse.cuhk.edu.hk"><IMG 
+                  title="Send e-mail" alt="Send e-mail" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_email.gif" 
+                  border=0></A> <A href="http://tinchoino1.uhome.net/" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_www.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=38118232"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a>');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=38118232"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/38118232#pager"><img src="http://web.icq.com/whitepages/online?icq=38118232&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT><A 
+                  href="http://wwp.icq.com/scripts/search.dll?to=38118232"><IMG 
+                  title="ICQ Number" alt="ICQ Number" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_icq_add.gif" 
+                  border=0></A></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=2283></A><B>koniloni</B></SPAN><BR><SPAN class=postdetails>New 
+            poster<BR><BR><BR>Joined: 18 Apr 2002<BR>Posts: 15<BR></SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=2283&amp;sid=e443d3bf297239c03c2e39c22dae0e54#2283"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Sat Jun 
+                  15, 2002 4:24 am<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: Help problem 10070</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=2283&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>What can I do now?Can you 
+                  give me any idea?</SPAN><SPAN 
+              class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=266&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=266&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150><SPAN class=name><A 
+            name=2288></A><B>10153EN</B></SPAN><BR><SPAN class=postdetails>A 
+            great helper<BR><BR><BR>Joined: 06 Jan 2002<BR>Posts: 
+            148<BR>Location: Hong Kong</SPAN><BR></TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=2288&amp;sid=e443d3bf297239c03c2e39c22dae0e54#2288"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Sat Jun 
+                  15, 2002 7:37 am<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: </SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=2288&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>I solved this problem by 
+                  storing the year number (which can be very large) in an 
+                  integer array. Then check this year with some number theory. 
+                  <BR><BR>For example, if a numbe if divible by 3, then the sum 
+                  of all of it's digits is ....</SPAN><SPAN 
+                  class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row2 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=135&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=135&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="mailto:shto@cse.cuhk.edu.hk"><IMG 
+                  title="Send e-mail" alt="Send e-mail" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_email.gif" 
+                  border=0></A> <A href="http://tinchoino1.uhome.net/" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_www.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=38118232"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a>');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=38118232"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/38118232#pager"><img src="http://web.icq.com/whitepages/online?icq=38118232&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT><A 
+                  href="http://wwp.icq.com/scripts/search.dll?to=38118232"><IMG 
+                  title="ICQ Number" alt="ICQ Number" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_icq_add.gif" 
+                  border=0></A></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=3807></A><B>hongping</B></SPAN><BR><SPAN class=postdetails>New 
+            poster<BR><BR><BR>Joined: 26 Jul 2002<BR>Posts: 12<BR></SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=3807&amp;sid=e443d3bf297239c03c2e39c22dae0e54#3807"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Fri Jul 
+                  26, 2002 5:01 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: still cannot solve</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=3807&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>Hmm... I tried implementing 
+                  a large array and some number theory to check for 
+                  divisibility... but this still doesnt work. perhaps someone 
+                  could help me spot my mistake please? thanks a lot! 
+                  <BR><BR>#include &lt;string.h&gt; <BR>#include 
+                  &lt;stdlib.h&gt; <BR>#include &lt;iostream.h&gt; <BR>#include 
+                  &lt;stdio.h&gt; <BR><BR>void main() <BR>{ <BR>long long y; 
+                  <BR>char yr[5000002]; <BR>int x=0,l; <BR>while (gets(yr)) 
+                  <BR>{ <BR>char yy[100]; <BR>long z=strlen(yr); <BR>long i; 
+                  <BR>int ok=0; <BR>if (strlen(yr)&gt;5) <BR>{ <BR>sprintf 
+                  (yy,"%c%c%c%c%c", yr[z-5], yr[z-4], yr[z-3], yr[z-2], 
+                  yr[z-1]); <BR>} <BR>else <BR>strcpy(yy,yr); <BR>y=atol(yy); 
+                  <BR>l=0; <BR>if ((y%4==0 &amp;&amp; y%100!=0) || (y%400==0)) 
+                  <BR>{ <BR>ok=1; <BR>cout &lt;&lt; "This is leap year.\n"; 
+                  <BR>l=1; <BR>} <BR>if (y%5==0) <BR>{ <BR>y=0; <BR>for 
+                  (i=0;i&lt;z;i++) <BR>{ <BR>y=(y+yr[i])%3; <BR>} <BR>if 
+                  (y%3==0) <BR>{ <BR>ok=1; <BR>cout &lt;&lt; "This is huluculu 
+                  festival year.\n"; <BR>} <BR><BR>y=0; <BR>for (i=0;i&lt;z;i++) 
+                  <BR>{ <BR>if (i%2) <BR>y=(y+yr[i])%11; <BR>else 
+                  <BR>y=(y-yr[i])%11; <BR><BR>} <BR>if (l &amp;&amp; (y%11==0)) 
+                  <BR>{ <BR>ok=1; <BR>cout &lt;&lt; "This is bulukulu festival 
+                  year.\n"; <BR>} <BR>} <BR>if (!ok) <BR>cout &lt;&lt; "This is 
+                  an ordinary year.\n"; <BR><BR>cout &lt;&lt; endl; <BR>} 
+                  <BR>}</SPAN><SPAN 
+        class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=572&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=572&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="mailto:hongping99@yahoo.com"><IMG 
+                  title="Send e-mail" alt="Send e-mail" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_email.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150><SPAN class=name><A 
+            name=3963></A><B>chaojinn</B></SPAN><BR><SPAN class=postdetails>New 
+            poster<BR><BR><BR>Joined: 19 Apr 2002<BR>Posts: 6<BR></SPAN><BR></TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=3963&amp;sid=e443d3bf297239c03c2e39c22dae0e54#3963"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Wed Jul 
+                  31, 2002 12:23 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; 
+                  &nbsp;Post subject: me w/a too,help!!!</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=3963&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>#include "iostream.h" 
+                  <BR>#include "stdlib.h" <BR>#include "string.h" <BR>#include 
+                  "stdio.h" <BR><BR>struct str <BR>{ <BR>char base[100000]; 
+                  <BR>int len; <BR>}; <BR><BR>bool mod3(str year) <BR>{ <BR>long 
+                  sum; <BR>div_t t; <BR>sum=0; <BR>int i; 
+                  <BR>for(i=0;i&lt;year.len;i++) <BR>sum+=(year.base[i]-'0'); 
+                  <BR>t=div(sum,3); <BR>if(t.rem==0) <BR>return true; <BR>return 
+                  false; <BR>} <BR><BR>bool mod4(str year) <BR>{ <BR>div_t t; 
+                  <BR>t=div((year.base[year.len-2]-'0'),2); <BR>if(t.rem==0) 
+                  <BR>{ <BR>if(((year.base[year.len-1]-'0')==0) 
+                  <BR>||((year.base[year.len-1]-'0')==4) 
+                  <BR>||((year.base[year.len-1]-'0')==<IMG alt="" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_cool.gif" 
+                  border=0>) <BR>return true; <BR>} <BR>else 
+                  <BR>if(((year.base[year.len-1]-'0')==2) 
+                  <BR>||((year.base[year.len-1]-'0')==6)) <BR>return true; 
+                  <BR>return false; <BR>} <BR><BR>bool mod5(str year) <BR>{ 
+                  <BR>if((year.base[year.len-1]=='0')||(year.base[year.len-1]=='5')) 
+                  <BR>return true; <BR>return false; <BR>} <BR><BR>bool 
+                  mod11(str year) <BR>{ <BR>int i; <BR>i=0; <BR>long sum1,sum2; 
+                  <BR>sum1=0; <BR>sum2=0; <BR>while(i&lt;year.len) <BR>{ 
+                  <BR>sum1+=(year.base[i]-'0'); <BR>i+=2; <BR>} <BR>i=1; 
+                  <BR>while(i&lt;year.len) <BR>{ <BR>sum2+=(year.base[i]-'0'); 
+                  <BR>i+=2; <BR>} <BR>if(sum1==sum2) <BR>return true; <BR>return 
+                  false; <BR>} <BR><BR>bool mod100(str year) <BR>{ 
+                  <BR>if(((year.base[year.len-2]-'0')==0)&amp;&amp;((year.base[year.len-1]-'0')==0)) 
+                  <BR>return true; <BR>return false; <BR>} <BR><BR>bool 
+                  mod400(str year) <BR>{ <BR>div_t t; 
+                  <BR>t=div((year.base[year.len-4]-'0'),2); 
+                  <BR>if(((year.base[year.len-2]-'0')==0)&amp;&amp;((year.base[year.len-1]-'0')==0)) 
+                  <BR>{ <BR>if(t.rem==0) <BR>{ 
+                  <BR>if(((year.base[year.len-3]-'0')==0) 
+                  <BR>||((year.base[year.len-3]-'0')==4) 
+                  <BR>||((year.base[year.len-3]-'0')==<IMG alt="" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_cool.gif" 
+                  border=0>) <BR>return true; <BR>} <BR>else 
+                  <BR>if(((year.base[year.len-3]-'0')==2) 
+                  <BR>||((year.base[year.len-3]-'0')==6)) <BR>return true; <BR>} 
+                  <BR>return false; <BR>} <BR><BR><BR>bool isleap(str year) 
+                  <BR>{ <BR>bool f1,f2,f3; <BR>f1=mod4(year); 
+                  <BR>f2=mod100(year); <BR>f3=mod400(year); 
+                  <BR>if((f1&amp;&amp;(!f2))||f3) <BR>return true; <BR>else 
+                  <BR>return false; <BR>} <BR><BR>bool ishf(str year) <BR>{ 
+                  <BR>if(mod3(year)&amp;&amp;mod5(year)) <BR>return true; 
+                  <BR>else <BR>return false; <BR>} <BR><BR><BR>bool isbf(str 
+                  year) <BR>{ 
+                  <BR>if(mod11(year)&amp;&amp;mod5(year)&amp;&amp;isleap(year)) 
+                  <BR>return true; <BR>else <BR>return false; <BR>} <BR><BR>void 
+                  main() <BR>{ <BR>str year; <BR>bool f; <BR>while(!feof(stdin)) 
+                  <BR>{ <BR>f=false; <BR>gets(year.base); 
+                  <BR>year.len=strlen(year.base); <BR>if(isleap(year)) <BR>{ 
+                  <BR>puts("This is leap year."); <BR>f=true; <BR>} 
+                  <BR>if(ishf(year)) <BR>{ <BR>puts("This is huluculu festival 
+                  year."); <BR>f=true; <BR>} <BR>if(isbf(year)) <BR>{ 
+                  <BR>puts("This is bulukulu festival year."); <BR>f=true; <BR>} 
+                  <BR>if(!f) <BR>puts("This is an ordinary year."); 
+                  <BR>puts(""); <BR>} <BR>}</SPAN><SPAN 
+              class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row2 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=268&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=268&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=4251></A><B>hongping</B></SPAN><BR><SPAN class=postdetails>New 
+            poster<BR><BR><BR>Joined: 26 Jul 2002<BR>Posts: 12<BR></SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=4251&amp;sid=e443d3bf297239c03c2e39c22dae0e54#4251"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Sun Aug 
+                  11, 2002 6:35 am<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: Solution for 10070</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=4251&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>I have learnt another 
+                  (perhaps easier) way of calculating the modulus of long 
+                  integers. Thanks to Jiawei for letting me see his source code. 
+                  Here is my accepted solution. <BR><BR>#include &lt;stdio.h&gt; 
+                  <BR>#include &lt;string.h&gt; <BR>#include &lt;stdlib.h&gt; 
+                  <BR>#include &lt;iostream.h&gt; <BR><BR>char a[10000000]; 
+                  <BR><BR>void main(void){ <BR>int i,leap,ord,f=1; <BR>while 
+                  (cin &gt;&gt; a){ <BR>if (f) <BR>f=0; <BR>else <BR>cout 
+                  &lt;&lt; endl; <BR>int mod4,mod100,mod400,mod15,mod55; 
+                  <BR>mod4=mod100=mod400=mod15=mod55=0; <BR>ord=1;leap=0; 
+                  <BR>for (i=0;i&lt;strlen(a);i++) <BR>{ 
+                  <BR>mod4=(mod4*10+a[i]-'0')%4; 
+                  <BR>mod100=(mod100*10+a[i]-'0')%100; 
+                  <BR>mod400=(mod400*10+a[i]-'0')%400; 
+                  <BR>mod15=(mod15*10+a[i]-'0')%15; 
+                  <BR>mod55=(mod55*10+a[i]-'0')%55; <BR>} <BR>if ((!mod4 
+                  &amp;&amp; mod100) || !mod400) <BR>{ <BR>leap=1; <BR>ord=0; 
+                  <BR>cout &lt;&lt; "This is leap year.\n"; <BR>} <BR>if 
+                  (!mod15) <BR>{ <BR>ord=0; <BR>cout &lt;&lt; "This is huluculu 
+                  festival year.\n"; <BR>} <BR>if (leap &amp;&amp; !mod55) <BR>{ 
+                  <BR>ord=0; <BR>cout &lt;&lt; "This is bulukulu festival 
+                  year.\n"; <BR>} <BR>if (ord) <BR>cout &lt;&lt; "This is an 
+                  ordinary year.\n"; <BR><BR>} <BR>}</SPAN><SPAN 
+                  class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=572&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=572&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="mailto:hongping99@yahoo.com"><IMG 
+                  title="Send e-mail" alt="Send e-mail" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_email.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150><SPAN class=name><A 
+            name=4513></A><B>Meng-Hsuan Wu</B></SPAN><BR><SPAN 
+            class=postdetails>New poster<BR><BR><BR>Joined: 22 Aug 
+            2002<BR>Posts: 2<BR>Location: Taiwan</SPAN><BR></TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=4513&amp;sid=e443d3bf297239c03c2e39c22dae0e54#4513"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Fri Aug 
+                  23, 2002 3:19 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: 10070 Output Limit Exceeded</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=4513&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>This is my source code for 
+                  problem <SPAN style="COLOR: #ffa34f"><B>10070</B></SPAN>. When 
+                  I ran it on my computer, it worked well when I input a long 
+                  number. But I got "Output Limit Exceeded" when I submit it. 
+                  Can anyone help me? <BR></SPAN>
+                  <TABLE cellSpacing=1 cellPadding=3 width="90%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN class=genmed><B>C:</B></SPAN></TD></TR>
+                    <TR>
+                      <TD class=code><SPAN class=BEAprepro>#include 
+                        &lt;stdio.h&gt;</SPAN> <BR><SPAN 
+                        class=BEAprepro>#include &lt;string.h&gt;</SPAN> 
+                        <BR>main() <BR>{ <BR>&nbsp; &nbsp;<SPAN 
+                        class=BEAcategory_1>char</SPAN> s[10000]; <BR>&nbsp; 
+                        &nbsp;<SPAN class=BEAcategory_1>int</SPAN> y[10000]; 
+                        <BR>&nbsp; &nbsp;<SPAN class=BEAcategory_1>int</SPAN> 
+                        len,i,m400,m15,m55,l,h,b,f=1,pass=1; <BR>&nbsp; 
+                        &nbsp;<SPAN class=BEAcategory_1>do</SPAN>{ <BR>&nbsp; 
+                        &nbsp; &nbsp; <SPAN class=BEAcategory_3>gets</SPAN>(s); 
+                        <BR>&nbsp; &nbsp; &nbsp; len=<SPAN 
+                        class=BEAcategory_3>strlen</SPAN>(s); <BR>&nbsp; &nbsp; 
+                        &nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>(len==0||s[0]&lt;48||s[0]&gt;57) 
+                        <BR>&nbsp; <SPAN class=BEAcategory_1>break</SPAN>; 
+                        <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>for</SPAN>(i=9999;i&gt;=len;i--) 
+                        <BR>&nbsp; y[i]=0; <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>for</SPAN>(i=len-1;i&gt;=0;i--) 
+                        <BR>&nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>(s[len-1-i]&gt;=48&amp;&amp;s[len-1-i]&lt;=57) 
+                        <BR>&nbsp; &nbsp; &nbsp;y[i]=s[len-1-i]-48; <BR>&nbsp; 
+                        <SPAN class=BEAcategory_1>else</SPAN> <BR>&nbsp; &nbsp; 
+                        &nbsp;pass=0; <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>(pass==0) <BR>&nbsp; <SPAN 
+                        class=BEAcategory_1>break</SPAN>; <BR>&nbsp; &nbsp; 
+                        &nbsp; m400=(y[2]*100+y[1]*10+y[0])%400; <BR>&nbsp; 
+                        &nbsp; &nbsp; m15=y[len-1]; <BR>&nbsp; &nbsp; &nbsp; 
+                        <SPAN 
+                        class=BEAcategory_1>for</SPAN>(i=len-2;i&gt;=0;i--) 
+                        <BR>&nbsp; m15=(m15*10+y[i])%15; <BR>&nbsp; &nbsp; 
+                        &nbsp; m55=y[len-1]; <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>for</SPAN>(i=len-2;i&gt;=0;i--) 
+                        <BR>&nbsp; m55=(m55*10+y[i])%55; <BR>&nbsp; &nbsp; 
+                        &nbsp; <SPAN class=BEAcategory_1>if</SPAN>(f==0) 
+                        <BR>&nbsp; <SPAN 
+                        class=BEAcategory_3>printf</SPAN>("<SPAN 
+                        class=BEAquote>\n</SPAN>"); <BR>&nbsp; &nbsp; &nbsp; 
+                        f=0; <BR>&nbsp; &nbsp; &nbsp; l=h=b=0; <BR>&nbsp; &nbsp; 
+                        &nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>((m400%4==0&amp;&amp;m400%100!=0)||m400==0) 
+                        <BR>&nbsp; l=1; <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>(m15==0) <BR>&nbsp; h=1; 
+                        <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>(l==1&amp;&amp;m55==0) 
+                        <BR>&nbsp; b=1; <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>(l==1) <BR>&nbsp; <SPAN 
+                        class=BEAcategory_3>printf</SPAN>("<SPAN 
+                        class=BEAquote>This is leap year.\n</SPAN>"); <BR>&nbsp; 
+                        &nbsp; &nbsp; <SPAN class=BEAcategory_1>if</SPAN>(h==1) 
+                        <BR>&nbsp; <SPAN 
+                        class=BEAcategory_3>printf</SPAN>("<SPAN 
+                        class=BEAquote>This is huluculu festival 
+                        year.\n</SPAN>"); <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>(b==1) <BR>&nbsp; <SPAN 
+                        class=BEAcategory_3>printf</SPAN>("<SPAN 
+                        class=BEAquote>This is bulukulu festival 
+                        year.\n</SPAN>"); <BR>&nbsp; &nbsp; &nbsp; <SPAN 
+                        class=BEAcategory_1>if</SPAN>(l+h+b==0) <BR>&nbsp; <SPAN 
+                        class=BEAcategory_3>printf</SPAN>("<SPAN 
+                        class=BEAquote>This is an ordinary year.\n</SPAN>"); 
+                        <BR>&nbsp; &nbsp;}<SPAN 
+                        class=BEAcategory_1>while</SPAN>(1); <BR>} 
+                  </TD></TR></TBODY></TABLE><SPAN class=postbody></SPAN><SPAN 
+                  class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row2 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=670&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=670&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="http://home.kimo.com.tw/tony0103" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_www.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=670&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="MSN Messenger" alt="MSN Messenger" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_msnm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=121592570"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a>');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=121592570"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/121592570#pager"><img src="http://web.icq.com/whitepages/online?icq=121592570&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></SCRIPT>
+                  <NOSCRIPT><A 
+                  href="http://wwp.icq.com/scripts/search.dll?to=121592570"><IMG 
+                  title="ICQ Number" alt="ICQ Number" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_icq_add.gif" 
+                  border=0></A></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=5919></A><B>haaaz</B></SPAN><BR><SPAN 
+            class=postdetails>Experienced poster<BR><BR><BR>Joined: 08 Sep 
+            2002<BR>Posts: 29<BR></SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=5919&amp;sid=e443d3bf297239c03c2e39c22dae0e54#5919"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Sat Oct 
+                  26, 2002 5:59 am<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: Re: me w/a too,help!!!</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=5919&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody></SPAN>
+                  <TABLE cellSpacing=1 cellPadding=3 width="90%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN class=genmed><B>chaojinn 
+                    wrote:</B></SPAN></TD></TR>
+                    <TR>
+                      <TD class=quote>#include "iostream.h" <BR>bool mod11(str 
+                        year) <BR>{ <BR>int i; <BR>i=0; <BR>long sum1,sum2; 
+                        <BR>sum1=0; <BR>sum2=0; <BR>while(i&lt;year.len) <BR>{ 
+                        <BR>sum1+=(year.base[i]-'0'); <BR>i+=2; <BR>} <BR>i=1; 
+                        <BR>while(i&lt;year.len) <BR>{ 
+                        <BR>sum2+=(year.base[i]-'0'); <BR>i+=2; <BR>} 
+                        <BR>if(<SPAN style="COLOR: red">sum1==sum2</SPAN>) 
+                        <BR>return true; <BR>return false; <BR>} 
+                    <BR><BR></TD></TR></TBODY></TABLE><SPAN 
+                  class=postbody><BR><BR>it should be <BR></SPAN>
+                  <TABLE cellSpacing=1 cellPadding=3 width="90%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN class=genmed><B>Code:</B></SPAN></TD></TR>
+                    <TR>
+                      <TD class=code>((sum1-sum2)%11 == 
+                  0)</TD></TR></TBODY></TABLE><SPAN class=postbody></SPAN><SPAN 
+                  class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=710&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=710&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150><SPAN class=name><A 
+            name=5928></A><B>haaaz</B></SPAN><BR><SPAN 
+            class=postdetails>Experienced poster<BR><BR><BR>Joined: 08 Sep 
+            2002<BR>Posts: 29<BR></SPAN><BR></TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=5928&amp;sid=e443d3bf297239c03c2e39c22dae0e54#5928"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Sat Oct 
+                  26, 2002 1:54 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: Re: 10070 Output Limit Exceeded</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=5928&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody></SPAN>
+                  <TABLE cellSpacing=1 cellPadding=3 width="90%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><SPAN class=genmed><B>Meng-Hsuan Wu 
+                      wrote:</B></SPAN></TD></TR>
+                    <TR>
+                      <TD class=quote>This is my source code for problem <SPAN 
+                        style="COLOR: #ffa34f"><B>10070</B></SPAN>. When I ran 
+                        it on my computer, it worked well when I input a long 
+                        number. But I got "Output Limit Exceeded" when I submit 
+                        it. Can anyone help me? <BR></SPAN>
+                        <TABLE cellSpacing=1 cellPadding=3 width="90%" 
+                        align=center border=0>
+                          <TBODY>
+                          <TR>
+                            <TD><SPAN class=genmed><B>C:</B></SPAN></TD></TR>
+                          <TR>
+                            <TD class=code><SPAN class=BEAprepro>#include 
+                              &lt;stdio.h&gt;</SPAN> <BR><SPAN 
+                              class=BEAprepro>#include &lt;string.h&gt;</SPAN> 
+                              <BR>main() <BR>{ <BR>&nbsp; &nbsp;<SPAN 
+                              class=BEAcategory_1>char</SPAN> s[10000]; 
+                              <BR>&nbsp; &nbsp;<SPAN 
+                              class=BEAcategory_1>int</SPAN> y[10000]; 
+                              <BR>&nbsp; <SPAN class=BEAlinecomment>//...</SPAN> 
+                              <BR></TD></TR></TBODY></TABLE><SPAN 
+                        class=postbody></SPAN></TD></TR></TBODY></TABLE><SPAN 
+                  class=postbody><BR><BR>Maybe 10000 elements are not 
+                  enough?</SPAN><SPAN 
+          class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row2 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=710&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=710&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=10659></A><B>soyoja</B></SPAN><BR><SPAN 
+            class=postdetails>Experienced poster<BR><BR><BR>Joined: 17 Feb 
+            2002<BR>Posts: 86<BR>Location: Seoul, South Korea</SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://online-judge.uva.es/board/viewtopic.php?p=10659&amp;sid=e443d3bf297239c03c2e39c22dae0e54#10659"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Fri Apr 
+                  18, 2003 1:08 am<SPAN class=gen>&nbsp;</SPAN>&nbsp; &nbsp;Post 
+                  subject: </SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=10659&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>Dear haaz. <BR>10000 
+                  elements array would be enough to store test data. <BR>My 
+                  program also use 10000 elements char array. <BR>Finally, I got 
+                  "Accepted". ^^</SPAN><SPAN 
+            class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;highlight=10070&amp;sid=e443d3bf297239c03c2e39c22dae0e54#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=176&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=176&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_pm.gif" 
+                  border=0></A> <A href="http://www.cyworld.com/soyoja" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_www.gif" 
+                  border=0></A> <A 
+                  href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=176&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+                  title="MSN Messenger" alt="MSN Messenger" 
+                  src="online-judge_uva_es  View topic - Problem 10070 leap year___files/icon_msnm.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                  <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/spacer.gif" 
+            width=1></TD></TR>
+        <TR align=middle>
+          <TD class=catBottom colSpan=2 height=28>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <FORM 
+                action=viewtopic.php?t=467&amp;start=0&amp;sid=e443d3bf297239c03c2e39c22dae0e54 
+                method=post>
+                <TD align=middle><SPAN class=gensmall>Display posts from 
+                  previous: <SELECT name=postdays><OPTION value=0 selected>All 
+                    Posts</OPTION><OPTION value=1>1 Day</OPTION><OPTION 
+                    value=7>7 Days</OPTION><OPTION value=14>2 
+                    Weeks</OPTION><OPTION value=30>1 Month</OPTION><OPTION 
+                    value=90>3 Months</OPTION><OPTION value=180>6 
+                    Months</OPTION><OPTION value=364>1 
+                  Year</OPTION></SELECT>&nbsp;<SELECT name=postorder><OPTION 
+                    value=asc selected>Oldest First</OPTION><OPTION 
+                    value=desc>Newest First</OPTION></SELECT>&nbsp;<INPUT class=liteoption type=submit value=Go name=submit></SPAN></TD></FORM></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=2 cellPadding=2 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center noWrap align=left><SPAN class=nav><A 
+            href="http://online-judge.uva.es/board/posting.php?mode=newtopic&amp;f=9&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+            alt="Post new topic" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/post.gif" 
+            align=middle border=0></A>&nbsp;&nbsp;&nbsp;<A 
+            href="http://online-judge.uva.es/board/posting.php?mode=reply&amp;t=467&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+            alt="Reply to topic" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/reply.gif" 
+            align=middle border=0></A></SPAN></TD>
+          <TD class=nav vAlign=center align=left width="100%"><SPAN 
+            class=nav><A class=nav 
+            href="http://online-judge.uva.es/board/index.php?sid=e443d3bf297239c03c2e39c22dae0e54">online-judge.uva.es 
+            Forum Index</A>&nbsp;-&gt;&nbsp;<A class=nav 
+            href="http://online-judge.uva.es/board/index.php?c=1&amp;sid=e443d3bf297239c03c2e39c22dae0e54">Help 
+            on the Problemset</A>&nbsp;-&gt;&nbsp;<A class=nav 
+            href="http://online-judge.uva.es/board/viewforum.php?f=9&amp;sid=e443d3bf297239c03c2e39c22dae0e54">Volume 
+            C</A>&nbsp;-&gt;&nbsp;<A class=nav 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;sid=e443d3bf297239c03c2e39c22dae0e54">Problem 
+            10070 leap year...</A></SPAN></TD>
+          <TD vAlign=top noWrap align=right><SPAN class=gensmall>All times are 
+            GMT + 1 Hour</SPAN><BR><SPAN class=nav>Goto page <B>1</B>, <A 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;postdays=0&amp;postorder=asc&amp;highlight=10070&amp;start=15&amp;sid=e443d3bf297239c03c2e39c22dae0e54">2</A>&nbsp;&nbsp;<A 
+            href="http://online-judge.uva.es/board/viewtopic.php?t=467&amp;postdays=0&amp;postorder=asc&amp;highlight=10070&amp;start=15&amp;sid=e443d3bf297239c03c2e39c22dae0e54">Next</A></SPAN> 
+            <SPAN class=mainmenu><A class=mainmenu title="Printable version" 
+            href="http://online-judge.uva.es/board/printview.php?t=467&amp;start=0&amp;sid=e443d3bf297239c03c2e39c22dae0e54"><IMG 
+            alt="Printable version" 
+            src="online-judge_uva_es  View topic - Problem 10070 leap year___files/print.gif" 
+            align=middle border=0></A></SPAN> </TD></TR>
+        <TR>
+          <TD align=left colSpan=3><SPAN class=nav>Page <B>1</B> of 
+            <B>2</B></SPAN></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=2 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top noWrap align=left width="40%"><SPAN 
+            class=gensmall></SPAN><BR>&nbsp;<BR></TD>
+          <TD vAlign=top noWrap align=right>
+            <FORM name=jumpbox 
+            onsubmit="if(document.jumpbox.f.value == -1){return false;}" 
+            action=viewforum.php?sid=e443d3bf297239c03c2e39c22dae0e54 
+method=get>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD noWrap><SPAN class=gensmall>Jump to:&nbsp;<SELECT 
+                  onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }" 
+                  name=selected_id><OPTION value=-1>Select a 
+                    forum</OPTION><OPTION value=-1></OPTION><OPTION 
+                    value=Root>online-judge.uva.es Forum Index</OPTION><OPTION 
+                    value=c4>|--Real Time Contests and Last Minute 
+                    Information</OPTION><OPTION 
+                    value=f18>|&nbsp;&nbsp;&nbsp;|--Real Time 
+                    Clarification</OPTION><OPTION 
+                    value=f26>|&nbsp;&nbsp;&nbsp;|--Fixing 
+                    Mistakes</OPTION><OPTION value=c2>|--Let's make some 
+                    programs!</OPTION><OPTION 
+                    value=f12>|&nbsp;&nbsp;&nbsp;|--Other words</OPTION><OPTION 
+                    value=f22>|&nbsp;&nbsp;&nbsp;|--Algorithms</OPTION><OPTION 
+                    value=f11>|&nbsp;&nbsp;&nbsp;|--New features</OPTION><OPTION 
+                    value=c1>|--Help on the Problemset</OPTION><OPTION 
+                    value=f1>|&nbsp;&nbsp;&nbsp;|--Volume I</OPTION><OPTION 
+                    value=f2>|&nbsp;&nbsp;&nbsp;|--Volume II</OPTION><OPTION 
+                    value=f4>|&nbsp;&nbsp;&nbsp;|--Volume III</OPTION><OPTION 
+                    value=f5>|&nbsp;&nbsp;&nbsp;|--Volume IV</OPTION><OPTION 
+                    value=f6>|&nbsp;&nbsp;&nbsp;|--Volume V</OPTION><OPTION 
+                    value=f7>|&nbsp;&nbsp;&nbsp;|--Volume VI</OPTION><OPTION 
+                    value=f8>|&nbsp;&nbsp;&nbsp;|--Volume VII</OPTION><OPTION 
+                    value=f21>|&nbsp;&nbsp;&nbsp;|--Volume VIII</OPTION><OPTION 
+                    value=f9 selected>|&nbsp;&nbsp;&nbsp;|--Volume 
+                    C</OPTION><OPTION value=f10>|&nbsp;&nbsp;&nbsp;|--Volume 
+                    CI</OPTION><OPTION value=f17>|&nbsp;&nbsp;&nbsp;|--Volume 
+                    CII</OPTION><OPTION value=f20>|&nbsp;&nbsp;&nbsp;|--Volume 
+                    CIII</OPTION><OPTION value=f23>|&nbsp;&nbsp;&nbsp;|--Volume 
+                    CIV</OPTION><OPTION value=f25>|&nbsp;&nbsp;&nbsp;|--Volume 
+                    CV</OPTION><OPTION value=f28>|&nbsp;&nbsp;&nbsp;|--Volume 
+                    CVI</OPTION><OPTION value=c3>|--Help on 
+                    languages</OPTION><OPTION 
+                    value=f13>|&nbsp;&nbsp;&nbsp;|--C</OPTION><OPTION 
+                    value=f14>|&nbsp;&nbsp;&nbsp;|--C++</OPTION><OPTION 
+                    value=f15>|&nbsp;&nbsp;&nbsp;|--Pascal</OPTION><OPTION 
+                    value=f16>|&nbsp;&nbsp;&nbsp;|--Java</OPTION><OPTION 
+                    value=c5>|--Off Topic</OPTION><OPTION 
+                    value=f24>|&nbsp;&nbsp;&nbsp;|--Off topic (General 
+                    chit-chat)</OPTION></SELECT><INPUT type=hidden 
+                  value=e443d3bf297239c03c2e39c22dae0e54 name=sid>&nbsp;<INPUT class=liteoption type=submit value=Go></SPAN></TD></TR></TBODY></TABLE></FORM><SPAN 
+            class=gensmall>You <B>cannot</B> post new topics in this 
+            forum<BR>You <B>cannot</B> reply to topics in this forum<BR>You 
+            <B>cannot</B> edit your posts in this forum<BR>You <B>cannot</B> 
+            delete your posts in this forum<BR>You <B>cannot</B> vote in polls 
+            in this forum<BR></SPAN></TD></TR></TBODY></TABLE>
+      <DIV align=center><SPAN class=copyright><BR><BR><!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB 2.0. If you cannot (for good
+	reason) retain the full copyright we request you at least leave in place the
+	Powered by phpBB 2.0.8 line, with phpBB linked to www.phpbb.com. If you refuse
+	to include even this then support on our forums may be affected.
+
+	The phpBB Group : 2002
+// -->Powered 
+      by <A class=copyright href="http://www.phpbb.com/" target=_phpbb>phpBB</A> 
+      2.0.8 © 2001, 2002 phpBB 
+Group<BR></SPAN></DIV></TD></TR></TBODY></TABLE></BODY></HTML>

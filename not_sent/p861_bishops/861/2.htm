@@ -1,0 +1,1463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="prev" href="http://online-judge.uva.es/board/viewtopic.php?t=2669&amp;view=previous" title="View previous topic">
+<link rel="next" href="http://online-judge.uva.es/board/viewtopic.php?t=2669&amp;view=next" title="View next topic">
+<link rel="up" href="http://online-judge.uva.es/board/viewforum.php?f=21" title="Volume VIII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=18" title="Real Time Clarification">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=26" title="Fixing Mistakes">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=31" title="HOWTOs">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=12" title="Other words">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=22" title="Algorithms">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=11" title="New features">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=1" title="Volume I">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=2" title="Volume II">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=4" title="Volume III">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=5" title="Volume IV">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=6" title="Volume V">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=7" title="Volume VI">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=8" title="Volume VII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=21" title="Volume VIII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=9" title="Volume C">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=10" title="Volume CI">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=17" title="Volume CII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=20" title="Volume CIII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=23" title="Volume CIV">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=25" title="Volume CV">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=28" title="Volume CVI">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=29" title="Volume CVII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=30" title="Volume CVIII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=13" title="C">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=14" title="C++">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=15" title="Pascal">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=16" title="Java">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=24" title="Off topic (General chit-chat)">
+
+
+
+<title>online-judge.uva.es :: View topic - 861 (Little Bishops)</title><!-- link rel="stylesheet" href="templates/subSilver/subSilver.css" type="text/css" --><style type="text/css">
+<!--
+/*
+  The original subSilver Theme for phpBB version 2+
+  Created by subBlue design
+  http://www.subBlue.com
+
+  NOTE: These CSS definitions are stored within the main page body so that you can use the phpBB2
+  theme administration centre. When you have finalised your style you could cut the final CSS code
+  and place it in an external file, deleting this section to save bandwidth.
+*/
+
+/* General page style. The scroll bar colours only visible in IE5.5+ */
+body {
+	background-color: #E5E5E5;
+	scrollbar-face-color: #DEE3E7;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #DEE3E7;
+	scrollbar-3dlight-color: #D1D7DC;
+	scrollbar-arrow-color:  #006699;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #98AAB1;
+}
+
+/* General font families for common tags */
+font,th,td,p { font-family: Verdana, Arial, Helvetica, sans-serif }
+a:link,a:active,a:visited { color : #006699; }
+a:hover		{ text-decoration: underline; color : #DD6900; }
+hr	{ height: 0px; border: solid #D1D7DC 0px; border-top-width: 1px;}
+
+/* This is the border line & background colour round the entire page */
+.bodyline	{ background-color: #FFFFFF; border: 1px #98AAB1 solid; }
+
+/* This is the outline round the main forum tables */
+.forumline	{ background-color: #FFFFFF; border: 2px #006699 solid; }
+
+/* Main table cell colours and backgrounds */
+td.row1	{ background-color: #EFEFEF; }
+td.row2	{ background-color: #DEE3E7; }
+td.row3	{ background-color: #D1D7DC; }
+
+/*
+  This is for the table cell above the Topics, Post & Last posts on the index.php page
+  By default this is the fading out gradiated silver background.
+  However, you could replace this with a bitmap specific for each forum
+*/
+td.rowpic {
+		background-color: #FFFFFF;
+		background-image: url(templates/subSilver/images/cellpic2.jpg);
+		background-repeat: repeat-y;
+}
+
+/* Header cells - the blue and silver gradient backgrounds */
+th	{
+	color: #FFA34F; font-size: 11px; font-weight : bold;
+	background-color: #006699; height: 25px;
+	background-image: url(templates/subSilver/images/cellpic3.gif);
+}
+
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {
+			background-image: url(templates/subSilver/images/cellpic1.gif);
+			background-color:#D1D7DC; border: #FFFFFF; border-style: solid; height: 28px;
+}
+
+/*
+  Setting additional nice inner borders for the main table cells.
+  The names indicate which sides the border will be on.
+  Don't worry if you don't understand this, just ignore it :-)
+*/
+td.cat,td.catHead,td.catBottom {
+	height: 29px;
+	border-width: 0px 0px 0px 0px;
+}
+th.thHead,th.thSides,th.thTop,th.thLeft,th.thRight,th.thBottom,th.thCornerL,th.thCornerR {
+	font-weight: bold; border: #FFFFFF; border-style: solid; height: 28px;
+}
+td.row3Right,td.spaceRow {
+	background-color: #D1D7DC; border: #FFFFFF; border-style: solid;
+}
+
+th.thHead,td.catHead { font-size: 12px; border-width: 1px 1px 0px 1px; }
+th.thSides,td.catSides,td.spaceRow	 { border-width: 0px 1px 0px 1px; }
+th.thRight,td.catRight,td.row3Right	 { border-width: 0px 1px 0px 0px; }
+th.thLeft,td.catLeft	  { border-width: 0px 0px 0px 1px; }
+th.thBottom,td.catBottom  { border-width: 0px 1px 1px 1px; }
+th.thTop	 { border-width: 1px 0px 0px 0px; }
+th.thCornerL { border-width: 1px 0px 0px 1px; }
+th.thCornerR { border-width: 1px 1px 0px 0px; }
+
+/* The largest text used in the index page title and toptic title etc. */
+.maintitle	{
+	font-weight: bold; font-size: 22px; font-family: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; line-height : 120%; color : #000000;
+}
+
+/* General text */
+.gen { font-size : 12px; }
+.genmed { font-size : 11px; }
+.gensmall { font-size : 10px; }
+.gen,.genmed,.gensmall { color : #000000; }
+a.gen,a.genmed,a.gensmall { color: #006699; text-decoration: none; }
+a.gen:hover,a.genmed:hover,a.gensmall:hover	{ color: #DD6900; text-decoration: underline; }
+
+/* The register, login, search etc links at the top of the page */
+.mainmenu		{ font-size : 11px; color : #000000 }
+a.mainmenu		{ text-decoration: none; color : #006699;  }
+a.mainmenu:hover{ text-decoration: underline; color : #DD6900; }
+
+/* Forum category titles */
+.cattitle		{ font-weight: bold; font-size: 12px ; letter-spacing: 1px; color : #006699}
+a.cattitle		{ text-decoration: none; color : #006699; }
+a.cattitle:hover{ text-decoration: underline; }
+
+/* Forum title: Text and link to the forums used in: index.php */
+.forumlink		{ font-weight: bold; font-size: 12px; color : #006699; }
+a.forumlink 	{ text-decoration: none; color : #006699; }
+a.forumlink:hover{ text-decoration: underline; color : #DD6900; }
+
+/* Used for the navigation text, (Page 1,2,3 etc) and the navigation bar when in a forum */
+.nav			{ font-weight: bold; font-size: 11px; color : #000000;}
+a.nav			{ text-decoration: none; color : #006699; }
+a.nav:hover		{ text-decoration: underline; }
+
+/* titles for the topics: could specify viewed link colour too */
+.topictitle,h1,h2	{ font-weight: bold; font-size: 11px; color : #000000; }
+a.topictitle:link   { text-decoration: none; color : #006699; }
+a.topictitle:visited { text-decoration: none; color : #5493B4; }
+a.topictitle:hover	{ text-decoration: underline; color : #DD6900; }
+
+/* Name of poster in viewmsg.php and viewtopic.php and other places */
+.name			{ font-size : 11px; color : #000000;}
+
+/* Location, number of posts, post date etc */
+.postdetails		{ font-size : 10px; color : #000000; }
+
+/* The content of the posts (body of text) */
+.postbody { font-size : 12px; line-height: 18px}
+a.postlink:link	{ text-decoration: none; color : #006699 }
+a.postlink:visited { text-decoration: none; color : #5493B4; }
+a.postlink:hover { text-decoration: underline; color : #DD6900}
+
+/* Quote & Code blocks */
+.code {
+	font-family: Courier, 'Courier New', sans-serif; font-size: 11px; color: #006600;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+.quote {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #444444; line-height: 125%;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+/* Copyright and bottom info */
+.copyright		{ font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #444444; letter-spacing: -1px;}
+a.copyright		{ color: #444444; text-decoration: none;}
+a.copyright:hover { color: #000000; text-decoration: underline;}
+
+/* Form elements */
+input,textarea, select {
+	color : #000000;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	border-color : #000000;
+}
+
+/* The text input fields background colour */
+input.post, textarea.post, select {
+	background-color : #FFFFFF;
+}
+
+input { text-indent : 2px; }
+
+/* The buttons used for bbCode styling in message post */
+input.button {
+	background-color : #EFEFEF;
+	color : #000000;
+	font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* The main submit button option */
+input.mainoption {
+	background-color : #FAFAFA;
+	font-weight : bold;
+}
+
+/* None-bold submit button */
+input.liteoption {
+	background-color : #FAFAFA;
+	font-weight : normal;
+}
+
+/* This is the line in the posting page which shows the rollover
+  help line. This is actually a text box, but if set to be the same
+  colour as the background no one will know ;)
+*/
+.helpline { background-color: #DEE3E7; border-style: none; }
+
+/* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
+@import url("templates/subSilver/formIE.css");
+-->
+</style>
+<script language="Javascript" type="text/javascript">
+<!--
+	if ( 0 )
+	{
+		window.open('privmsg.php?mode=newpm', '_phpbbprivmsg', 'HEIGHT=225,resizable=yes,WIDTH=400');;
+	}
+//-->
+</script></head>
+
+<body bgcolor="#e5e5e5" link="#006699" text="#000000" vlink="#5493b4">
+
+<a name="top"></a>
+
+<table align="center" border="0" cellpadding="10" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="bodyline"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td><a href="http://online-judge.uva.es/board/index.php"><img src="2_files/logo_phpBB.gif" alt="online-judge.uva.es Forum Index" border="0" vspace="1"></a></td>
+				<td align="center" valign="middle" width="100%"><span class="maintitle">online-judge.uva.es</span><br><span class="gen">The <b>NEW</b> board for online-judge.uva.es site!<br>  </span>
+				<table border="0" cellpadding="2" cellspacing="0">
+					<tbody><tr>
+						<td align="center" nowrap="nowrap" valign="top"><span class="mainmenu"> <a href="http://online-judge.uva.es/board/faq.php" class="mainmenu"><img src="2_files/icon_mini_faq.gif" alt="FAQ" border="0" height="13" hspace="3" width="12">FAQ</a></span><span class="mainmenu">   <a href="http://online-judge.uva.es/board/search.php" class="mainmenu"><img src="2_files/icon_mini_search.gif" alt="Search" border="0" height="13" hspace="3" width="12">Search</a>   <a href="http://online-judge.uva.es/board/memberlist.php" class="mainmenu"><img src="2_files/icon_mini_members.gif" alt="Memberlist" border="0" height="13" hspace="3" width="12">Memberlist</a>   <a href="http://online-judge.uva.es/board/groupcp.php" class="mainmenu"><img src="2_files/icon_mini_groups.gif" alt="Usergroups" border="0" height="13" hspace="3" width="12">Usergroups</a> 
+						</span></td>
+					</tr>
+					<tr>
+						<td align="center" height="25" nowrap="nowrap" valign="top"><span class="mainmenu"> <a href="http://online-judge.uva.es/board/profile.php?mode=editprofile" class="mainmenu"><img src="2_files/icon_mini_profile.gif" alt="Profile" border="0" height="13" hspace="3" width="12">Profile</a>   <a href="http://online-judge.uva.es/board/privmsg.php?folder=inbox" class="mainmenu"><img src="2_files/icon_mini_message.gif" alt="You have no new messages" border="0" height="13" hspace="3" width="12">You have no new messages</a>   <a href="http://online-judge.uva.es/board/login.php?logout=true&amp;sid=037d5f1099802f5f1c75a60add922a11" class="mainmenu"><img src="2_files/icon_mini_login.gif" alt="Log out [ fran ]" border="0" height="13" hspace="3" width="12">Log out [ fran ]</a> </span></td>
+					</tr>
+				</tbody></table></td>
+			</tr>
+		</tbody></table>
+
+		<br>
+
+
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td colspan="2" align="left" valign="bottom"><a class="maintitle" href="http://online-judge.uva.es/board/viewtopic.php?t=2669&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=861">861 (Little Bishops)</a><br>
+	  <span class="gensmall"><b></b><br>
+	    </span></td>
+  </tr>
+</tbody></table>
+
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="bottom"><span class="nav"><a href="http://online-judge.uva.es/board/posting.php?mode=newtopic&amp;f=21"><img src="2_files/post.gif" alt="Post new topic" align="middle" border="0"></a>   <a href="http://online-judge.uva.es/board/posting.php?mode=reply&amp;t=2669"><img src="2_files/reply.gif" alt="Reply to topic" align="middle" border="0"></a></span></td>
+	<td align="left" valign="middle" width="100%"><span class="nav">   <a href="http://online-judge.uva.es/board/index.php" class="nav">online-judge.uva.es Forum Index</a>
+	  -&gt; <a href="http://online-judge.uva.es/board/viewforum.php?f=21" class="nav">Volume VIII</a></span></td>
+  </tr>
+</tbody></table>
+
+<table class="forumline" border="0" cellpadding="3" cellspacing="1" width="100%">
+	<tbody><tr align="right">
+		<td class="catHead" colspan="2" height="28"><span class="nav"><a href="http://online-judge.uva.es/board/viewtopic.php?t=2669&amp;view=previous" class="nav">View previous topic</a> :: <a href="http://online-judge.uva.es/board/viewtopic.php?t=2669&amp;view=next" class="nav">View next topic</a>  </span></td>
+	</tr>
+	
+	<tr>
+		<th class="thLeft" height="26" nowrap="nowrap" width="150">Author</th>
+		<th class="thRight" nowrap="nowrap">Message</th>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="10423"></a><b>FlareCDE</b></span><br><span class="postdetails">New poster<br><img src="2_files/17657851263e7b3fd72f3c0.gif" alt="" border="0"><br><br>Joined: 21 Mar 2003<br>Posts: 3<br>Location: New York</span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=10423#10423"><img src="2_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Apr 09, 2003 5:07 pm<span class="gen"> </span>   Post subject: 861 (Little Bishops)</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=10423"><img src="2_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">I'm
+getting a time out, and for the life of me, cannot figure out why. I
+rigged the program so it loops through every possible input the judge
+can give according to the book I have (1x1 to 8x8 board with up to 64
+bishops), and it easily completes on my computer in under a second or
+two with all inputs. Any subset of then should be faster...
+<br>
+
+<br>
+[cpp:1:3e422f7346]
+<br>
+#include &lt;stdlib.h&gt;
+<br>
+#include &lt;cstdio&gt;
+<br>
+
+<br>
+int findEven(int* board, int numBishops, int boardSize, int currRow, int color)
+<br>
+{
+<br>
+	int y,z;
+<br>
+	int solutions = 0;
+<br>
+	int notFound;
+<br>
+	int boundry;
+<br>
+	if(boardSize % 2 == 0)
+<br>
+	{
+<br>
+		if(currRow &lt;= (boardSize-2)/2)
+<br>
+		{
+<br>
+			y = (boardSize/2)-(currRow+1);
+<br>
+			boundry = (boardSize/2)+currRow;
+<br>
+		}
+<br>
+		else
+<br>
+		{
+<br>
+			y = (boardSize/2)-(((boardSize-2)-currRow)+1);
+<br>
+			boundry = (boardSize/2)+((boardSize-2)-currRow);
+<br>
+		}
+<br>
+	}
+<br>
+	else
+<br>
+	{
+<br>
+		if(color == 0)
+<br>
+		{
+<br>
+			//printf("Color 0: ");
+<br>
+			if(currRow &lt;= boardSize/2)
+<br>
+			{
+<br>
+				y =  boardSize/2 - currRow;
+<br>
+				boundry = boardSize/2 + currRow;
+<br>
+				//printf("Row #%d, Left Side: %d bounded on %d",currRow,y,boundry);
+<br>
+			}
+<br>
+			else
+<br>
+			{
+<br>
+				y = boardSize/2 - (currRow - boardSize/2);
+<br>
+				boundry = boardSize/2 + (currRow - boardSize/2);
+<br>
+				//printf("Row #%d, Right Side: %d bounded on %d",currRow,y,boundry);
+<br>
+			}
+<br>
+		}
+<br>
+		else
+<br>
+		{
+<br>
+			//printf("Color 1: ");
+<br>
+			if(currRow &lt;= boardSize/2 - 1)
+<br>
+			{
+<br>
+				y = boardSize/2 - currRow - 1;
+<br>
+				boundry =  boardSize/2 + currRow;
+<br>
+				//printf("Row #%d, Left Side: %d bounded on %d",currRow,y,boundry);
+<br>
+			}
+<br>
+			else
+<br>
+			{
+<br>
+				y = boardSize/2 - (currRow - boardSize/2) - 1;
+<br>
+				boundry = boardSize/2 + (currRow - boardSize/2);
+<br>
+				//printf("Row #%d, Right Side: %d bounded on %d",currRow,y,boundry);
+<br>
+			}
+<br>
+
+<br>
+		}
+<br>
+	}
+<br>
+	//printf("\n");
+<br>
+	//printf("Boardsize=%d, Column=%d, y=%d, boundry=%d\n",boardSize,currRow,y,boundry);
+<br>
+	for(y; y &lt;= boundry; y++)
+<br>
+	{
+<br>
+		//for(x = 0; x &lt;= boardSize-2; x++)
+<br>
+		//{
+<br>
+		//	if(board[x] &gt; 0 &amp;&amp; x &lt; currRow)
+<br>
+		//	{
+<br>
+		//		printf("%d ",board[x]);
+<br>
+		//	}
+<br>
+		//	else if (x == currRow)
+<br>
+		//	{
+<br>
+		//		printf("&lt;%d&gt; ",y);
+<br>
+		//	}
+<br>
+		//	else
+<br>
+		//	{
+<br>
+		//		printf("* ");
+<br>
+		//	}
+<br>
+		//}
+<br>
+		notFound = true;
+<br>
+		for(z = 0; z &lt; currRow; z++)
+<br>
+		{
+<br>
+			if(board[z] == y)
+<br>
+			{
+<br>
+				//printf(" FAILS.\n");
+<br>
+				z = currRow;
+<br>
+				notFound = false;
+<br>
+			}
+<br>
+		}
+<br>
+		if(notFound)
+<br>
+		{
+<br>
+			board[currRow] = y;
+<br>
+			if(numBishops == 1) 
+<br>
+			{
+<br>
+				//printf(" SOLUTION.\n");
+<br>
+				solutions++;
+<br>
+			}
+<br>
+			else
+<br>
+			{
+<br>
+				//printf(" PLACED.\n");
+<br>
+				//printf("numBishops-1: %d &lt;= %d : B value\n",numBishops,(boardSize-2)-(currRow+1));
+<br>
+				if(currRow &lt; boardSize-2 &amp;&amp; numBishops-1 &lt;= (boardSize-2)-currRow)
+<br>
+					solutions += findEven(board,numBishops-1,boardSize,currRow+1,color);
+<br>
+			}
+<br>
+		}
+<br>
+	}
+<br>
+	board[currRow] = -1;
+<br>
+	if(numBishops &lt;= (boardSize-2)-currRow) solutions += findEven(board,numBishops,boardSize,currRow+1,color);
+<br>
+	//printf("BACK.\n");
+<br>
+	return(solutions);
+<br>
+}
+<br>
+
+<br>
+int main(int argc, char *argv[])
+<br>
+{
+<br>
+	int boardSize;
+<br>
+	int numBishops;
+<br>
+	int whiteResult;
+<br>
+	int x,y,z;
+<br>
+	scanf("%d %d",&amp;boardSize,&amp;numBishops);
+<br>
+	//boardSize = 1;
+<br>
+	while(boardSize != 0 || numBishops != 0)
+<br>
+	{
+<br>
+	//	for(y = 8; y &gt;= 0; y--)
+<br>
+	//	{
+<br>
+	//		for(z = 0; z &lt;= y*y; z++)
+<br>
+	//		{
+<br>
+	//			boardSize = y;
+<br>
+	//			numBishops = z;
+<br>
+	//			printf("%d x %d, with %d bishops = ",boardSize,boardSize,numBishops);
+<br>
+		if(numBishops == 0) printf("1\n");
+<br>
+		else
+<br>
+		{
+<br>
+		if(boardSize % 2 == 0)
+<br>
+		{
+<br>
+			//even number board, do only white and square
+<br>
+			int* whiteBoard = new int[boardSize-1];
+<br>
+			int* resultBoard = new int[numBishops+1];
+<br>
+			for(x = 0; x &lt; numBishops+1; x++)
+<br>
+			{
+<br>
+				resultBoard[x] = 0;
+<br>
+			}
+<br>
+			resultBoard[0] = 1;
+<br>
+			if(numBishops &gt;= 1) resultBoard[1] = (boardSize*boardSize)/2;
+<br>
+			for(x = 2; x &lt;= numBishops; x++)
+<br>
+			{
+<br>
+				if(x &lt;= (boardSize-1)) resultBoard[x] += findEven(whiteBoard,x,boardSize,0,0);
+<br>
+				else x = numBishops+1;
+<br>
+				//printf("Finished with %d\n",x);
+<br>
+			}
+<br>
+			//printf("\n");
+<br>
+			whiteResult = 0;
+<br>
+			for(x = 0; x &lt;= numBishops; x++)
+<br>
+			{
+<br>
+				whiteResult += (resultBoard[x] * resultBoard[numBishops-x]);
+<br>
+				//printf("For (%d+%d) = %d, %d*%d, %d solutions found.\n"
+<br>
+				//	,x,numBishops-x,numBishops,resultBoard[x],resultBoard[numBishops-x]
+<br>
+				//	,(resultBoard[x] * resultBoard[numBishops-x]));
+<br>
+			}
+<br>
+			//printf("\n");
+<br>
+			printf("%d\n", whiteResult);
+<br>
+			delete resultBoard;
+<br>
+			delete whiteBoard;
+<br>
+		}
+<br>
+		else
+<br>
+		{
+<br>
+			//odd number board, do both black and white
+<br>
+			int* whiteBoard = new int[boardSize];
+<br>
+			int* blackBoard = new int[boardSize-1];	
+<br>
+			int* resultWhite = new int[numBishops+1];
+<br>
+			int* resultBlack = new int[numBishops+1];
+<br>
+			for(x = 0; x &lt; numBishops+1; x++)
+<br>
+			{
+<br>
+				resultWhite[x] = 0;
+<br>
+				resultBlack[x] = 0;
+<br>
+			}
+<br>
+			resultWhite[0] = 1;
+<br>
+			resultBlack[0] = 1;
+<br>
+			for(x = 1; x &lt;= numBishops; x++)
+<br>
+			{
+<br>
+				resultWhite[x] = 0;
+<br>
+				resultBlack[x] = 0;
+<br>
+				if(x &lt;= boardSize)
+<br>
+				{
+<br>
+					resultWhite[x] += findEven(whiteBoard,x,boardSize,0,0);
+<br>
+					if(x &lt;= boardSize-1) resultBlack[x] += findEven(blackBoard,x,boardSize,0,1);
+<br>
+				}
+<br>
+				else x = numBishops+1;
+<br>
+				//printf("Finished with %d\n",x);
+<br>
+			}
+<br>
+			whiteResult = 0;
+<br>
+			for(x = 0; x &lt;= numBishops; x++)
+<br>
+			{
+<br>
+				whiteResult += (resultWhite[x] * resultBlack[numBishops-x]);
+<br>
+				//printf("For (%d+%d) = %d, %d*%d, %d solutions found.\n"
+<br>
+				//	,x,numBishops-x,numBishops,resultWhite[x],resultBlack[numBishops-x]
+<br>
+				//	,(resultWhite[x] * resultBlack[numBishops-x]));
+<br>
+			}
+<br>
+			//printf("\n");
+<br>
+			printf("%d\n", whiteResult);
+<br>
+			delete whiteBoard;
+<br>
+			delete blackBoard;
+<br>
+			delete resultWhite;
+<br>
+			delete resultBlack;
+<br>
+		}
+<br>
+		}
+<br>
+		scanf("%d %d",&amp;boardSize,&amp;numBishops);
+<br>
+	//}
+<br>
+	//}
+<br>
+	}
+<br>
+	return 0;
+<br>
+}
+<br>
+[/cpp:1:3e422f7346]<br>_________________<br>- <span style="color: teal;">Flare Araxion</span></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1391"><img src="2_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=1391"><img src="2_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a> <a href="mailto:flarecde@optonline.net"><img src="2_files/icon_email.gif" alt="Send e-mail" title="Send e-mail" border="0"></a> <a href="http://www.avidgamers.com/starfall" target="_userwww"><img src="2_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=FlareCDE&amp;message=Hello+Are+you+there?"><img src="2_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=FlareCDE&amp;.src=pg"><img src="2_files/icon_yim.gif" alt="Yahoo Messenger" title="Yahoo Messenger" border="0"></a> <a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1391"><img src="2_files/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0"></a><script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=53968863"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a>');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=53968863"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/53968863#pager"><img src="http://web.icq.com/whitepages/online?icq=53968863&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script></td><td> </td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"><a href="http://wwp.icq.com/scripts/search.dll?to=53968863"><img src="2_files/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0"></a></div><div style="position: absolute; left: 3px; top: -1px;"><a href="http://wwp.icq.com/53968863#pager"><img src="2_files/online.gif" border="0" height="18" width="18"></a></div></div><noscript><a
+href="http://wwp.icq.com/scripts/search.dll?to=53968863"><img
+src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ
+Number" title="ICQ Number" border="0" /></a></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="2_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="12444"></a><b>Sheng Cheng</b></span><br><span class="postdetails">New poster<br><br><br>Joined: 07 Jun 2003<br>Posts: 1<br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=12444#12444"><img src="2_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sat Jun 07, 2003 9:55 pm<span class="gen"> </span>   Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=12444"><img src="2_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Without
+considering the Time Limit Exceed, I think your code is still wrong.
+Try testdata 5 1. Your output is 24. But the answer is of course 25.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1703"><img src="2_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=1703"><img src="2_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td> </td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="2_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="14222"></a><b>reiners</b></span><br><span class="postdetails">New poster<br><br><br>Joined: 30 May 2003<br>Posts: 11<br>Location: San Francisco</span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=14222#14222"><img src="2_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Jul 22, 2003 2:18 pm<span class="gen"> </span>   Post subject: 861 (Little Bishops)</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=14222"><img src="2_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">I'm having the same problem.
+<br>
+
+<br>
+Has anyone got their submission to this accepted? My submission runs in
+less than a second for any given input (I wrote a driver program to
+check this on all possible inputs), yet it still times out.
+<br>
+
+<br>
+Here is my code for anyone interested:
+<br>
+
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">/*   @JUDGE_ID:   29339ZA   <span style="color: rgb(255, 163, 79);"><b>861</b></span>   C++   "Backtracking"   */
+<br>
+
+<br>
+#include &lt;iostream&gt;
+<br>
+#include &lt;cstdlib&gt;
+<br>
+// #include &lt;ctime&gt;
+<br>
+using namespace std;
+<br>
+
+<br>
+#define MAXCANDIDATES   100      /* max possible next extensions */
+<br>
+#define NMAX            100      /* maximum solution size */
+<br>
+
+<br>
+void dumpSolution(int n, int k);
+<br>
+
+<br>
+typedef char* data;         /* type to pass data to backtrack */
+<br>
+
+<br>
+long solution_count;         /* how many solutions are there? */
+<br>
+
+<br>
+bool occupied[15][15];
+<br>
+
+<br>
+
+<br>
+
+<br>
+void process_solution(int n, int k)
+<br>
+{
+<br>
+    solution_count++;
+<br>
+    // dumpSolution(n, k);
+<br>
+}
+<br>
+
+<br>
+void dumpSolution(int n, int k) {
+<br>
+    cout &lt;&lt; "n = " &lt;&lt; n &lt;&lt; "; k = " &lt;&lt; k &lt;&lt; endl;
+<br>
+    for (int i = 0; i &lt; 15; i++) {
+<br>
+   for (int j = 0; j &lt; 15; j++) {
+<br>
+      if (occupied[i][j]) {
+<br>
+         cout &lt;&lt; "X";
+<br>
+      }
+<br>
+      else {
+<br>
+         cout &lt;&lt; "O";
+<br>
+      }
+<br>
+   }
+<br>
+
+<br>
+        cout &lt;&lt; endl;
+<br>
+    }
+<br>
+    cout &lt;&lt; endl;
+<br>
+}
+<br>
+
+<br>
+bool is_a_solution(int m, int k)
+<br>
+{
+<br>
+   return (m == k);
+<br>
+}
+<br>
+
+<br>
+int getMaxFile(int n, int rank) {
+<br>
+    return n - abs(rank) - 1;
+<br>
+}
+<br>
+
+<br>
+
+<br>
+/*   What are possible elements of the next slot in the Little Bishops
+<br>
+   problem?
+<br>
+*/
+<br>
+
+<br>
+void construct_candidates(int m, int k, int n, int c[MAXCANDIDATES][2], 
+<br>
+                          int *ncandidates, int last, bool isCorner)
+<br>
+{
+<br>
+    int i,j;         /* counters */
+<br>
+    bool legal_move;      /* might the move be legal? */
+<br>
+    
+<br>
+    bool fileIsCorner;
+<br>
+    if (n % 2 == 0) {
+<br>
+        fileIsCorner = !isCorner;
+<br>
+    }
+<br>
+    else {
+<br>
+        fileIsCorner = isCorner;
+<br>
+    }
+<br>
+
+<br>
+    *ncandidates = 0;
+<br>
+    int maxI;
+<br>
+    if (isCorner) {
+<br>
+        maxI = n - 1;
+<br>
+    }
+<br>
+    else {
+<br>
+        maxI = n - 2;
+<br>
+    }
+<br>
+    for (i = last + 2; i &lt;= maxI; i += 2) {
+<br>
+        int maxJ = getMaxFile(n, i);
+<br>
+        int minJ = -maxJ;
+<br>
+        for (j = minJ; j &lt;= maxJ; j += 2) {
+<br>
+            legal_move = true;
+<br>
+            if (occupied[i + n - 1][j + n - 1]) {
+<br>
+                    legal_move = false;
+<br>
+
+<br>
+                    continue;
+<br>
+            }
+<br>
+            if (legal_move) {
+<br>
+                int minRank;
+<br>
+                int maxRank;
+<br>
+                if (isCorner) {
+<br>
+                    maxRank = n - 1;
+<br>
+                    minRank = -(n - 1);
+<br>
+                }
+<br>
+                else {
+<br>
+                    maxRank = n - 2;
+<br>
+                    minRank = -(n - 2);
+<br>
+                }
+<br>
+                for (k = minRank; k &lt;= maxRank; k += 2) {
+<br>
+                    int maxFile = getMaxFile(n, k);
+<br>
+                    int minFile = -maxFile;
+<br>
+                    for (int l = minFile; l &lt;= maxFile; l += 2) {
+<br>
+                            if (occupied[k + n - 1][l + n - 1] &amp;&amp; (i == k || j == l)) {  /* diagonal threat */
+<br>
+                                    legal_move = false;
+<br>
+
+<br>
+                                     break;
+<br>
+                            }
+<br>
+                    }
+<br>
+                    if (!legal_move) {
+<br>
+                            break;
+<br>
+                    }
+<br>
+                }
+<br>
+            }
+<br>
+            if (legal_move == true) {
+<br>
+                    c[*ncandidates][0] = i;
+<br>
+                    c[*ncandidates][1] = j;
+<br>
+                    *ncandidates = *ncandidates + 1;
+<br>
+            }
+<br>
+        }
+<br>
+    }
+<br>
+}
+<br>
+
+<br>
+
+<br>
+bool finished = false;                  /* found all solutions yet? */
+<br>
+
+<br>
+void backtrack(int m, int k, int n, int lastRank, bool isCorner)
+<br>
+{
+<br>
+        int c[MAXCANDIDATES][2];        /* candidates for next position */
+<br>
+        int ncandidates;                /* next position candidate count */
+<br>
+        int i;                          /* counter */
+<br>
+
+<br>
+        if (is_a_solution(m, k))
+<br>
+                process_solution(n, k);
+<br>
+        else if (m &lt; k) {
+<br>
+                m = m+1;
+<br>
+                construct_candidates(m, k, n, c, &amp;ncandidates, lastRank, isCorner);
+<br>
+      for (i=0; i&lt;ncandidates; i++) {
+<br>
+                    occupied[c[i][0] + n - 1][c[i][1] + n - 1] = true;
+<br>
+                    backtrack(m, k, n, c[i][0], isCorner);
+<br>
+                    occupied[c[i][0] + n - 1][c[i][1] + n - 1] = false;
+<br>
+                    if (finished) return;   /* terminate early */
+<br>
+      }
+<br>
+        }
+<br>
+}
+<br>
+
+<br>
+void initializeOccupied() {
+<br>
+    for (int i = 0; i &lt; 15; i++) {
+<br>
+   for (int j = 0; j &lt; 15; j++) {
+<br>
+      occupied[i][j] = false;
+<br>
+   }
+<br>
+    }
+<br>
+}
+<br>
+
+<br>
+
+<br>
+long solve(int n, int k) {
+<br>
+    long totalCount = 0;
+<br>
+    if (k &lt;= 2 * n - 1) {
+<br>
+        for (int cornerK = 0; cornerK &lt;= k; cornerK++) {
+<br>
+            solution_count = 0;
+<br>
+            initializeOccupied();
+<br>
+            backtrack(0, cornerK, n, -(n - 1) - 2, true);
+<br>
+            long cornerCount = solution_count;
+<br>
+
+<br>
+            int nonCornerK = k - cornerK;
+<br>
+            solution_count = 0;
+<br>
+            initializeOccupied();
+<br>
+            backtrack(0, nonCornerK, n, -(n - 2) - 2, false);
+<br>
+            long nonCornerCount = solution_count;
+<br>
+
+<br>
+            totalCount += cornerCount * nonCornerCount;
+<br>
+        }
+<br>
+    }
+<br>
+
+<br>
+   return totalCount;
+<br>
+}
+<br>
+
+<br>
+/*
+<br>
+int main2 (int argc, const char * argv[]) {
+<br>
+    int n;
+<br>
+    int k;
+<br>
+   time_t start,end;
+<br>
+   double dif;
+<br>
+   double max = 0.0;
+<br>
+
+<br>
+   printf("n, k, time, count\n");
+<br>
+    for (n = 1; n &lt;= 8; n++) {
+<br>
+      for (k = 0; k &lt;= n * n; k++) {
+<br>
+         time (&amp;start);
+<br>
+         long totalCount = solve(n, k);
+<br>
+         time (&amp;end);
+<br>
+         dif = difftime (end,start);
+<br>
+         if (dif &gt; max) {
+<br>
+            max = dif;
+<br>
+         }
+<br>
+         printf ("%d, %d, %.2lf, %d\n", n, k, dif, totalCount);
+<br>
+      }
+<br>
+    }
+<br>
+
+<br>
+   return 0;
+<br>
+}
+<br>
+*/
+<br>
+
+<br>
+
+<br>
+int main (int argc, const char * argv[]) {
+<br>
+    int n;
+<br>
+    int k;
+<br>
+
+<br>
+    while (cin &gt;&gt; n &gt;&gt; k) {
+<br>
+      if (n == 0 &amp;&amp; k == 0) {
+<br>
+        break;
+<br>
+      }
+<br>
+
+<br>
+        long totalCount = solve(n, k);
+<br>
+
+<br>
+      cout &lt;&lt; totalCount &lt;&lt; endl;
+<br>
+    }
+<br>
+
+<br>
+    return 0;
+<br>
+}</td>	</tr></tbody></table><span class="postbody"></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1657"><img src="2_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=1657"><img src="2_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td> </td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="2_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="14760"></a><b>anupam</b></span><br><span class="postdetails">Guru<br><img src="2_files/19400963623facf4c914404.jpeg" alt="" border="0"><br><br>Joined: 28 Aug 2002<br>Posts: 419<br>Location: BUET</span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=14760#14760"><img src="2_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Mon Aug 04, 2003 8:34 am<span class="gen"> </span>   Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=14760"><img src="2_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody"><span style="font-weight: bold;">first of all, never show your id in board. it may cause great harm. again to all,
+<br>
+i think there is a common recurrence formula for calculating. what is that?
+<br>
+--
+<br>
+thanking for help
+<br>
+anupam <img src="2_files/icon_redface.gif" alt="" border="0">  <img src="2_files/icon_redface.gif" alt="" border="0"> </span><br>_________________<br>"Everything should be made simple, but not always simpler"</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=686"><img src="2_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=686"><img src="2_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>  <a href="http://anupam.envy.nu/" target="_userwww"><img src="2_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=None&amp;message=Hello+Are+you+there?"><img src="2_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=none&amp;.src=pg"><img src="2_files/icon_yim.gif" alt="Yahoo Messenger" title="Yahoo Messenger" border="0"></a> <a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=686"><img src="2_files/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0"></a><script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=85"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a>');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=85"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/85#pager"><img src="http://web.icq.com/whitepages/online?icq=85&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script></td><td> </td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"><a href="http://wwp.icq.com/scripts/search.dll?to=85"><img src="2_files/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0"></a></div><div style="position: absolute; left: 3px; top: -1px;"><a href="http://wwp.icq.com/85#pager"><img src="2_files/online.html" border="0" height="18" width="18"></a></div></div><noscript><a
+href="http://wwp.icq.com/scripts/search.dll?to=85"><img
+src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ
+Number" title="ICQ Number" border="0" /></a></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="2_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="22514"></a><b>macin</b></span><br><span class="postdetails">New poster<br><br><br>Joined: 06 Apr 2004<br>Posts: 4<br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=22514#22514"><img src="2_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Apr 06, 2004 1:43 pm<span class="gen"> </span>   Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=22514"><img src="2_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">why dont you precalculate all necessary 212 input possibilities and output them (should be faster <img src="2_files/icon_smile.gif" alt="" border="0">
+<br>
+greets
+<br>
+tobias</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=2945"><img src="2_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=2945"><img src="2_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td> </td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="2_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="22523"></a><b>anupam</b></span><br><span class="postdetails">Guru<br><img src="2_files/19400963623facf4c914404.jpeg" alt="" border="0"><br><br>Joined: 28 Aug 2002<br>Posts: 419<br>Location: BUET</span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=22523#22523"><img src="2_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Apr 07, 2004 4:57 am<span class="gen"> </span>   Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=22523"><img src="2_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">There
+is a solution using DP and some greedy decision. But, I can't explain
+them so good. So, I request some ither programmers who have solved the
+problem to explain the matter.<br>_________________<br>"Everything should be made simple, but not always simpler"</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=686"><img src="2_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=686"><img src="2_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>  <a href="http://anupam.envy.nu/" target="_userwww"><img src="2_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=None&amp;message=Hello+Are+you+there?"><img src="2_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=none&amp;.src=pg"><img src="2_files/icon_yim.gif" alt="Yahoo Messenger" title="Yahoo Messenger" border="0"></a> <a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=686"><img src="2_files/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0"></a><script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=85"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a>');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=85"><img src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/85#pager"><img src="http://web.icq.com/whitepages/online?icq=85&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script></td><td> </td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"><a href="http://wwp.icq.com/scripts/search.dll?to=85"><img src="2_files/icon_icq_add.gif" alt="ICQ Number" title="ICQ Number" border="0"></a></div><div style="position: absolute; left: 3px; top: -1px;"><a href="http://wwp.icq.com/85#pager"><img src="2_files/online.html" border="0" height="18" width="18"></a></div></div><noscript><a
+href="http://wwp.icq.com/scripts/search.dll?to=85"><img
+src="templates/subSilver/images/lang_english/icon_icq_add.gif" alt="ICQ
+Number" title="ICQ Number" border="0" /></a></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="2_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr align="center">
+		<td class="catBottom" colspan="2" height="28"><table border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr><form method="post" action="viewtopic.php?t=2669&amp;start=0"></form>
+				<td align="center"><span class="gensmall">Display posts from previous: <select name="postdays"><option value="0" selected="selected">All Posts</option><option value="1">1 Day</option><option value="7">7 Days</option><option value="14">2 Weeks</option><option value="30">1 Month</option><option value="90">3 Months</option><option value="180">6 Months</option><option value="364">1 Year</option></select> <select name="postorder"><option value="asc" selected="selected">Oldest First</option><option value="desc">Newest First</option></select> <input value="Go" class="liteoption" name="submit" type="submit"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table>
+
+<table align="center" border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="middle"><span class="nav"><a href="http://online-judge.uva.es/board/posting.php?mode=newtopic&amp;f=21"><img src="2_files/post.gif" alt="Post new topic" align="middle" border="0"></a>   <a href="http://online-judge.uva.es/board/posting.php?mode=reply&amp;t=2669"><img src="2_files/reply.gif" alt="Reply to topic" align="middle" border="0"></a></span></td>
+	<td align="left" valign="middle" width="100%"><span class="nav">   <a href="http://online-judge.uva.es/board/index.php" class="nav">online-judge.uva.es Forum Index</a>
+	  -&gt; <a href="http://online-judge.uva.es/board/viewforum.php?f=21" class="nav">Volume VIII</a></span></td>
+	<td align="right" nowrap="nowrap" valign="top"><span class="gensmall">All times are GMT - 3 Hours</span><br><span class="nav"></span>
+	  </td>
+  </tr>
+  <tr>
+	<td colspan="3" align="left"><span class="nav">Page <b>1</b> of <b>1</b></span></td>
+  </tr>
+</tbody></table>
+
+<table align="center" border="0" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="top" width="40%"><span class="gensmall"><a href="http://online-judge.uva.es/board/viewtopic.php?t=2669&amp;watch=topic&amp;start=0&amp;sid=037d5f1099802f5f1c75a60add922a11">Watch this topic for replies</a></span><br>
+	   <br>
+	  </td>
+	<td align="right" nowrap="nowrap" valign="top">
+<form method="get" name="jumpbox" action="viewforum.php" onsubmit="if(document.jumpbox.f.value == -1){return false;}"><table border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to: <select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Select a forum</option><option value="-1"> </option><option value="-1">Real Time Contests and Last Minute Information</option><option value="-1">----------------</option><option value="18">Real Time Clarification</option><option value="26">Fixing Mistakes</option><option value="31">HOWTOs</option><option value="-1"> </option><option value="-1">Let's make some programs!</option><option value="-1">----------------</option><option value="12">Other words</option><option value="22">Algorithms</option><option value="11">New features</option><option value="-1"> </option><option value="-1">Help on the Problemset</option><option value="-1">----------------</option><option value="1">Volume I</option><option value="2">Volume II</option><option value="4">Volume III</option><option value="5">Volume IV</option><option value="6">Volume V</option><option value="7">Volume VI</option><option value="8">Volume VII</option><option value="21" selected="selected">Volume VIII</option><option value="9">Volume C</option><option value="10">Volume CI</option><option value="17">Volume CII</option><option value="20">Volume CIII</option><option value="23">Volume CIV</option><option value="25">Volume CV</option><option value="28">Volume CVI</option><option value="29">Volume CVII</option><option value="30">Volume CVIII</option><option value="-1"> </option><option value="-1">Help on languages</option><option value="-1">----------------</option><option value="13">C</option><option value="14">C++</option><option value="15">Pascal</option><option value="16">Java</option><option value="-1"> </option><option value="-1">Off Topic</option><option value="-1">----------------</option><option value="24">Off topic (General chit-chat)</option></select><input name="sid" value="037d5f1099802f5f1c75a60add922a11" type="hidden"> <input value="Go" class="liteoption" type="submit"></span></td>
+	</tr>
+</tbody></table></form>
+
+<span class="gensmall">You <b>can</b> post new topics in this forum<br>You <b>can</b> reply to topics in this forum<br>You <b>can</b> edit your posts in this forum<br>You <b>can</b> delete your posts in this forum<br>You <b>can</b> vote in polls in this forum<br></span></td>
+  </tr>
+</tbody></table>
+
+
+<div align="center"><span class="copyright"><br><br>
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB 2.0. If you cannot (for good
+	reason) retain the full copyright we request you at least leave in place the
+	Powered by phpBB line, with phpBB linked to www.phpbb.com. If you refuse
+	to include even this then support on our forums may be affected.
+
+	The phpBB Group : 2002
+// -->
+Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a> © 2001, 2005 phpBB Group<br></span></div>
+		</td>
+	</tr>
+</tbody></table>
+
+</body></html>

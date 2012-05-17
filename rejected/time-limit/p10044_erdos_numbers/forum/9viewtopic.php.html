@@ -1,0 +1,1192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="top" href="http://online-judge.uva.es/board/index.php" title="online-judge.uva.es Forum Index">
+<link rel="search" href="http://online-judge.uva.es/board/search.php" title="Search">
+<link rel="help" href="http://online-judge.uva.es/board/faq.php" title="FAQ">
+<link rel="author" href="http://online-judge.uva.es/board/memberlist.php" title="Memberlist">
+<link rel="prev" href="http://online-judge.uva.es/board/viewtopic.php?t=4086&amp;view=previous" title="View previous topic">
+<link rel="next" href="http://online-judge.uva.es/board/viewtopic.php?t=4086&amp;view=next" title="View next topic">
+<link rel="up" href="http://online-judge.uva.es/board/viewforum.php?f=14" title="C++">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=18" title="Real Time Clarification">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=26" title="Fixing Mistakes">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=31" title="HOWTOs">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=12" title="Other words">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=22" title="Algorithms">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=11" title="New features">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=1" title="Volume I">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=2" title="Volume II">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=4" title="Volume III">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=5" title="Volume IV">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=6" title="Volume V">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=7" title="Volume VI">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=8" title="Volume VII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=21" title="Volume VIII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=9" title="Volume C">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=10" title="Volume CI">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=17" title="Volume CII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=20" title="Volume CIII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=23" title="Volume CIV">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=25" title="Volume CV">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=28" title="Volume CVI">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=29" title="Volume CVII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=30" title="Volume CVIII">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=13" title="C">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=14" title="C++">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=15" title="Pascal">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=16" title="Java">
+<link rel="chapter forum" href="http://online-judge.uva.es/board/viewforum.php?f=24" title="Off topic (General chit-chat)"><title>online-judge.uva.es :: View topic - Strange RTE</title><!-- link rel="stylesheet" href="templates/subSilver/subSilver.css" type="text/css" -->
+
+
+
+<style type="text/css">
+<!--
+/*
+  The original subSilver Theme for phpBB version 2+
+  Created by subBlue design
+  http://www.subBlue.com
+
+  NOTE: These CSS definitions are stored within the main page body so that you can use the phpBB2
+  theme administration centre. When you have finalised your style you could cut the final CSS code
+  and place it in an external file, deleting this section to save bandwidth.
+*/
+
+/* General page style. The scroll bar colours only visible in IE5.5+ */
+body {
+	background-color: #E5E5E5;
+	scrollbar-face-color: #DEE3E7;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #DEE3E7;
+	scrollbar-3dlight-color: #D1D7DC;
+	scrollbar-arrow-color:  #006699;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #98AAB1;
+}
+
+/* General font families for common tags */
+font,th,td,p { font-family: Verdana, Arial, Helvetica, sans-serif }
+a:link,a:active,a:visited { color : #006699; }
+a:hover		{ text-decoration: underline; color : #DD6900; }
+hr	{ height: 0px; border: solid #D1D7DC 0px; border-top-width: 1px;}
+
+/* This is the border line & background colour round the entire page */
+.bodyline	{ background-color: #FFFFFF; border: 1px #98AAB1 solid; }
+
+/* This is the outline round the main forum tables */
+.forumline	{ background-color: #FFFFFF; border: 2px #006699 solid; }
+
+/* Main table cell colours and backgrounds */
+td.row1	{ background-color: #EFEFEF; }
+td.row2	{ background-color: #DEE3E7; }
+td.row3	{ background-color: #D1D7DC; }
+
+/*
+  This is for the table cell above the Topics, Post & Last posts on the index.php page
+  By default this is the fading out gradiated silver background.
+  However, you could replace this with a bitmap specific for each forum
+*/
+td.rowpic {
+		background-color: #FFFFFF;
+		background-image: url(templates/subSilver/images/cellpic2.jpg);
+		background-repeat: repeat-y;
+}
+
+/* Header cells - the blue and silver gradient backgrounds */
+th	{
+	color: #FFA34F; font-size: 11px; font-weight : bold;
+	background-color: #006699; height: 25px;
+	background-image: url(templates/subSilver/images/cellpic3.gif);
+}
+
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {
+			background-image: url(templates/subSilver/images/cellpic1.gif);
+			background-color:#D1D7DC; border: #FFFFFF; border-style: solid; height: 28px;
+}
+
+/*
+  Setting additional nice inner borders for the main table cells.
+  The names indicate which sides the border will be on.
+  Don't worry if you don't understand this, just ignore it :-)
+*/
+td.cat,td.catHead,td.catBottom {
+	height: 29px;
+	border-width: 0px 0px 0px 0px;
+}
+th.thHead,th.thSides,th.thTop,th.thLeft,th.thRight,th.thBottom,th.thCornerL,th.thCornerR {
+	font-weight: bold; border: #FFFFFF; border-style: solid; height: 28px;
+}
+td.row3Right,td.spaceRow {
+	background-color: #D1D7DC; border: #FFFFFF; border-style: solid;
+}
+
+th.thHead,td.catHead { font-size: 12px; border-width: 1px 1px 0px 1px; }
+th.thSides,td.catSides,td.spaceRow	 { border-width: 0px 1px 0px 1px; }
+th.thRight,td.catRight,td.row3Right	 { border-width: 0px 1px 0px 0px; }
+th.thLeft,td.catLeft	  { border-width: 0px 0px 0px 1px; }
+th.thBottom,td.catBottom  { border-width: 0px 1px 1px 1px; }
+th.thTop	 { border-width: 1px 0px 0px 0px; }
+th.thCornerL { border-width: 1px 0px 0px 1px; }
+th.thCornerR { border-width: 1px 1px 0px 0px; }
+
+/* The largest text used in the index page title and toptic title etc. */
+.maintitle	{
+	font-weight: bold; font-size: 22px; font-family: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; line-height : 120%; color : #000000;
+}
+
+/* General text */
+.gen { font-size : 12px; }
+.genmed { font-size : 11px; }
+.gensmall { font-size : 10px; }
+.gen,.genmed,.gensmall { color : #000000; }
+a.gen,a.genmed,a.gensmall { color: #006699; text-decoration: none; }
+a.gen:hover,a.genmed:hover,a.gensmall:hover	{ color: #DD6900; text-decoration: underline; }
+
+/* The register, login, search etc links at the top of the page */
+.mainmenu		{ font-size : 11px; color : #000000 }
+a.mainmenu		{ text-decoration: none; color : #006699;  }
+a.mainmenu:hover{ text-decoration: underline; color : #DD6900; }
+
+/* Forum category titles */
+.cattitle		{ font-weight: bold; font-size: 12px ; letter-spacing: 1px; color : #006699}
+a.cattitle		{ text-decoration: none; color : #006699; }
+a.cattitle:hover{ text-decoration: underline; }
+
+/* Forum title: Text and link to the forums used in: index.php */
+.forumlink		{ font-weight: bold; font-size: 12px; color : #006699; }
+a.forumlink 	{ text-decoration: none; color : #006699; }
+a.forumlink:hover{ text-decoration: underline; color : #DD6900; }
+
+/* Used for the navigation text, (Page 1,2,3 etc) and the navigation bar when in a forum */
+.nav			{ font-weight: bold; font-size: 11px; color : #000000;}
+a.nav			{ text-decoration: none; color : #006699; }
+a.nav:hover		{ text-decoration: underline; }
+
+/* titles for the topics: could specify viewed link colour too */
+.topictitle,h1,h2	{ font-weight: bold; font-size: 11px; color : #000000; }
+a.topictitle:link   { text-decoration: none; color : #006699; }
+a.topictitle:visited { text-decoration: none; color : #5493B4; }
+a.topictitle:hover	{ text-decoration: underline; color : #DD6900; }
+
+/* Name of poster in viewmsg.php and viewtopic.php and other places */
+.name			{ font-size : 11px; color : #000000;}
+
+/* Location, number of posts, post date etc */
+.postdetails		{ font-size : 10px; color : #000000; }
+
+/* The content of the posts (body of text) */
+.postbody { font-size : 12px; line-height: 18px}
+a.postlink:link	{ text-decoration: none; color : #006699 }
+a.postlink:visited { text-decoration: none; color : #5493B4; }
+a.postlink:hover { text-decoration: underline; color : #DD6900}
+
+/* Quote & Code blocks */
+.code {
+	font-family: Courier, 'Courier New', sans-serif; font-size: 11px; color: #006600;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+.quote {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #444444; line-height: 125%;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+/* Copyright and bottom info */
+.copyright		{ font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #444444; letter-spacing: -1px;}
+a.copyright		{ color: #444444; text-decoration: none;}
+a.copyright:hover { color: #000000; text-decoration: underline;}
+
+/* Form elements */
+input,textarea, select {
+	color : #000000;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	border-color : #000000;
+}
+
+/* The text input fields background colour */
+input.post, textarea.post, select {
+	background-color : #FFFFFF;
+}
+
+input { text-indent : 2px; }
+
+/* The buttons used for bbCode styling in message post */
+input.button {
+	background-color : #EFEFEF;
+	color : #000000;
+	font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* The main submit button option */
+input.mainoption {
+	background-color : #FAFAFA;
+	font-weight : bold;
+}
+
+/* None-bold submit button */
+input.liteoption {
+	background-color : #FAFAFA;
+	font-weight : normal;
+}
+
+/* This is the line in the posting page which shows the rollover
+  help line. This is actually a text box, but if set to be the same
+  colour as the background no one will know ;)
+*/
+.helpline { background-color: #DEE3E7; border-style: none; }
+
+/* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
+@import url("templates/subSilver/formIE.css");
+-->
+</style></head>
+
+<body bgcolor="#e5e5e5" link="#006699" text="#000000" vlink="#5493b4">
+
+<a name="top"></a>
+
+<table align="center" border="0" cellpadding="10" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="bodyline"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td><a href="http://online-judge.uva.es/board/index.php"><img src="9viewtopic.php_files/logo_phpBB.gif" alt="online-judge.uva.es Forum Index" border="0" vspace="1"></a></td>
+				<td align="center" valign="middle" width="100%"><span class="maintitle">online-judge.uva.es</span><br><span class="gen">The <b>NEW</b> board for online-judge.uva.es site!<br>&nbsp; </span>
+				<table border="0" cellpadding="2" cellspacing="0">
+					<tbody><tr>
+						<td align="center" nowrap="nowrap" valign="top"><span class="mainmenu">&nbsp;<a href="http://online-judge.uva.es/board/faq.php" class="mainmenu"><img src="9viewtopic.php_files/icon_mini_faq.gif" alt="FAQ" border="0" height="13" hspace="3" width="12">FAQ</a></span><span class="mainmenu">&nbsp; &nbsp;<a href="http://online-judge.uva.es/board/search.php" class="mainmenu"><img src="9viewtopic.php_files/icon_mini_search.gif" alt="Search" border="0" height="13" hspace="3" width="12">Search</a>&nbsp; &nbsp;<a href="http://online-judge.uva.es/board/memberlist.php" class="mainmenu"><img src="9viewtopic.php_files/icon_mini_members.gif" alt="Memberlist" border="0" height="13" hspace="3" width="12">Memberlist</a>&nbsp; &nbsp;<a href="http://online-judge.uva.es/board/groupcp.php" class="mainmenu"><img src="9viewtopic.php_files/icon_mini_groups.gif" alt="Usergroups" border="0" height="13" hspace="3" width="12">Usergroups</a>&nbsp;
+						&nbsp;<a href="http://online-judge.uva.es/board/profile.php?mode=register" class="mainmenu"><img src="9viewtopic.php_files/icon_mini_register.gif" alt="Register" border="0" height="13" hspace="3" width="12">Register</a></span>&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td align="center" height="25" nowrap="nowrap" valign="top"><span class="mainmenu">&nbsp;<a href="http://online-judge.uva.es/board/profile.php?mode=editprofile" class="mainmenu"><img src="9viewtopic.php_files/icon_mini_profile.gif" alt="Profile" border="0" height="13" hspace="3" width="12">Profile</a>&nbsp; &nbsp;<a href="http://online-judge.uva.es/board/privmsg.php?folder=inbox" class="mainmenu"><img src="9viewtopic.php_files/icon_mini_message.gif" alt="Log in to check your private messages" border="0" height="13" hspace="3" width="12">Log in to check your private messages</a>&nbsp; &nbsp;<a href="http://online-judge.uva.es/board/login.php" class="mainmenu"><img src="9viewtopic.php_files/icon_mini_login.gif" alt="Log in" border="0" height="13" hspace="3" width="12">Log in</a>&nbsp;</span></td>
+					</tr>
+				</tbody></table></td>
+			</tr>
+		</tbody></table>
+
+		<br>
+
+
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td colspan="2" align="left" valign="bottom"><a class="maintitle" href="http://online-judge.uva.es/board/viewtopic.php?t=4086&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=10044">Strange RTE</a><br>
+	  <span class="gensmall"><b></b><br>
+	  &nbsp; </span></td>
+  </tr>
+</tbody></table>
+
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="bottom"><span class="nav"><a href="http://online-judge.uva.es/board/posting.php?mode=newtopic&amp;f=14"><img src="9viewtopic.php_files/post.gif" alt="Post new topic" align="middle" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="http://online-judge.uva.es/board/posting.php?mode=reply&amp;t=4086"><img src="9viewtopic.php_files/reply.gif" alt="Reply to topic" align="middle" border="0"></a></span></td>
+	<td align="left" valign="middle" width="100%"><span class="nav">&nbsp;&nbsp;&nbsp;<a href="http://online-judge.uva.es/board/index.php" class="nav">online-judge.uva.es Forum Index</a>
+	  -&gt; <a href="http://online-judge.uva.es/board/viewforum.php?f=14" class="nav">C++</a></span></td>
+  </tr>
+</tbody></table>
+
+<table class="forumline" border="0" cellpadding="3" cellspacing="1" width="100%">
+	<tbody><tr align="right">
+		<td class="catHead" colspan="2" height="28"><span class="nav"><a href="http://online-judge.uva.es/board/viewtopic.php?t=4086&amp;view=previous" class="nav">View previous topic</a> :: <a href="http://online-judge.uva.es/board/viewtopic.php?t=4086&amp;view=next" class="nav">View next topic</a> &nbsp;</span></td>
+	</tr>
+	
+	<tr>
+		<th class="thLeft" height="26" nowrap="nowrap" width="150">Author</th>
+		<th class="thRight" nowrap="nowrap">Message</th>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="16964"></a><b>BiK</b></span><br><span class="postdetails">A great helper<br><br><br>Joined: 23 Sep 2003<br>Posts: 109<br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=16964#16964"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Mon Oct 06, 2003 2:23 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: Strange RTE</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=16964"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">When I get RTE usually this is because of segment violation. This time however the body of the RTE e-mail message said: </span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Quote:</b></span></td>	</tr>	<tr>	  <td class="quote">Your program has died with signal 6 (SIGABRT). Meaning:
+<br>
+
+<br>
+    Abort signal from abort()
+<br>
+
+<br>
+Before crash, it ran during 4.111 seconds.</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+I tried to find any problem with the program but I couldn't. Could
+anyone tell me what causes the SIGABRT signal in general? I mean who
+called the <span style="font-weight: bold;">abort()</span> function.
+<br>
+
+<br>
+My program tries to solve the <span style="color: rgb(255, 163, 79);"><b>10044</b></span>
+(Erdoes Numbers) problem. It is making extensive use of STL. I've
+noticed in some messages on the board that [cpp:1:f968463c0c]using
+namespace std[/cpp:1:f968463c0c] is danerous. Could this be the reason?
+If not I would appreciate if somebody tells me the potential danger of
+using: [cpp:1:f968463c0c]using namespace std[/cpp:1:f968463c0c]
+<br>
+
+<br>You could also notice that the program ran for more than 4 seconds.
+This is another problem I face with STL. I think that the library is
+implemented quite efficiently, but as a matter of fact I haven't had an
+ACCEPTED problem when using STL. And all problems I submitted got TLE
+answer. Could the reason for this also be the use of:
+[cpp:1:f968463c0c]using namespace std[/cpp:1:f968463c0c]
+<br>
+
+<br>
+Thanks in advance.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=2057"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=2057"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="17003"></a><b>BiK</b></span><br><span class="postdetails">A great helper<br><br><br>Joined: 23 Sep 2003<br>Posts: 109<br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17003#17003"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Oct 07, 2003 1:58 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17003"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">This is the program that I wrote in order to solve the <span style="font-weight: bold;"><span style="color: rgb(255, 163, 79);"><b>10044</b></span> - Erdos Numbers</span>
+problem. I'm sorry for posting a whole program, but since I use STL in
+my opinion the only possible errors could be TLE (if there is an
+infinite loop for example), WA (clear why) or MLE(if I don't use the
+containers sparingly). But from where could RTE error come. And even
+more misteriously the RTE is due to calling <span style="font-weight: bold;">abort()</span>. Please help me.
+<br>
+
+<br>
+[cpp:1:d8df4212b1]#include &lt;iostream&gt;
+<br>
+#include &lt;fstream&gt;
+<br>
+#include &lt;vector&gt;
+<br>
+#include &lt;string&gt;
+<br>
+#include &lt;map&gt;
+<br>
+#include &lt;set&gt;
+<br>
+#include &lt;queue&gt;
+<br>
+#include &lt;utility&gt;
+<br>
+
+<br>
+using namespace std;
+<br>
+
+<br>
+int p, n;
+<br>
+map&lt; string, set&lt;string&gt; &gt; db;
+<br>
+map&lt;string, int&gt; m;
+<br>
+
+<br>
+void vectorToSet(int k, vector&lt;string&gt; &amp;v, set&lt;string&gt; &amp;s) {
+<br>
+    for(int i = 0; i &lt; v.size(); i++) 
+<br>
+        if (i != k) 
+<br>
+            s.insert(v[i]);
+<br>
+}
+<br>
+
+<br>
+void updateDB(string &amp;s) {
+<br>
+    vector&lt;string&gt; v;
+<br>
+    int prev = 0, next = 0;
+<br>
+    while(true) {
+<br>
+        prev = next;
+<br>
+        while(s[next++] != ' ') 
+<br>
+            ;
+<br>
+        while(s[next] != ',' &amp;&amp; s[next] != ':')
+<br>
+            next++;
+<br>
+        v.push_back(s.substr(prev, next-prev));
+<br>
+        if (s[next] == ':')
+<br>
+            break;
+<br>
+        next += 2;        //jump over comma and interval
+<br>
+    } // outmost while
+<br>
+    for(int i = 0; i &lt; v.size(); i++)
+<br>
+        for(int j = 0; j &lt; v.size(); j++) {
+<br>
+            map&lt; string, set&lt;string&gt; &gt;::iterator it = db.find(v[i]);
+<br>
+            if (it == db.end()) {
+<br>
+                set&lt;string&gt; s;
+<br>
+                vectorToSet(i, v, s);
+<br>
+                db.insert( make_pair(v[i], s) );
+<br>
+            }
+<br>
+            else
+<br>
+                vectorToSet(i, v, it-&gt;second);
+<br>
+        }
+<br>
+}
+<br>
+
+<br>
+void buildMap() {
+<br>
+    m.clear();
+<br>
+    string erdos("Erdos, P.");
+<br>
+    m.insert( make_pair(erdos, 0) );
+<br>
+    queue&lt;string&gt; q;
+<br>
+    q.push(erdos);
+<br>
+    while(!q.empty()) {
+<br>
+        string f = q.front();
+<br>
+        int num = (m.find(f))-&gt;second;
+<br>
+        map&lt;string, set&lt;string&gt; &gt;::iterator dbit = db.find(f);
+<br>
+        for(set&lt;string&gt;::iterator sit = dbit-&gt;second.begin(); sit != dbit-&gt;second.end(); ++sit) {
+<br>
+                map&lt;string, int&gt;::iterator mit = m.find( *sit );
+<br>
+                if (mit != m.end())
+<br>
+                    continue;                
+<br>
+                q.push( *sit );
+<br>
+                m.insert( make_pair(*sit, num+1) );
+<br>
+        } // for
+<br>
+        q.pop();
+<br>
+    } // while
+<br>
+}
+<br>
+
+<br>
+int main(int argc, char *argv[])
+<br>
+{
+<br>
+    #ifndef ONLINE_JUDGE
+<br>
+        cin.rdbuf( (new ifstream("inp.txt"))-&gt;rdbuf() );
+<br>
+        cout.rdbuf( (new ofstream("out.txt"))-&gt;rdbuf() );
+<br>
+    #endif
+<br>
+    
+<br>
+    int scenarios;
+<br>
+    cin &gt;&gt; scenarios;
+<br>
+    for(int i = 1; i &lt;= scenarios; i++) {
+<br>
+        db.clear();
+<br>
+        cin &gt;&gt; p &gt;&gt; n;
+<br>
+        string s;
+<br>
+        getline(cin, s); // get newline
+<br>
+        //read database
+<br>
+        for(int j = 0; j &lt; p; j++) {
+<br>
+            getline(cin, s);
+<br>
+            updateDB(s);
+<br>
+        } // inner for
+<br>
+        buildMap();
+<br>
+        //output begins
+<br>
+        cout &lt;&lt; "Scenario " &lt;&lt; i &lt;&lt; endl;
+<br>
+        for(int j = 0; j &lt; n; j++) {
+<br>
+            getline(cin, s);
+<br>
+            cout &lt;&lt; s &lt;&lt; " ";
+<br>
+            map&lt;string, int&gt;::iterator it = m.find(s);
+<br>
+            if (it == m.end())
+<br>
+                cout &lt;&lt; "infinity" &lt;&lt; endl;
+<br>
+            else
+<br>
+                cout &lt;&lt; it-&gt;second &lt;&lt; endl;
+<br>
+        } // inner for
+<br>
+    } // outer for
+<br>
+  
+<br>
+    //system("PAUSE");	
+<br>
+    return 0;
+<br>
+}[/cpp:1:d8df4212b1]</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=2057"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=2057"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="17005"></a><b>UFP2161</b></span><br><span class="postdetails">Guru<br><img src="9viewtopic.php_files/uva.gif" alt="" border="0"><br><br>Joined: 21 Jul 2003<br>Posts: 281<br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17005#17005"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Oct 07, 2003 3:31 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17005"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">abort() is used inside the STL when something really goes haywire</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1866"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=1866"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>  <a href="http://www.kingkoala.org/" target="_userwww"><img src="9viewtopic.php_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=UFP2161&amp;message=Hello+Are+you+there?"><img src="9viewtopic.php_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a>  <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="17017"></a><b>Krzysztof Duleba</b></span><br><span class="postdetails">Guru<br><img src="9viewtopic.php_files/mini04.jpeg" alt="" border="0"><br><br>Joined: 19 Jun 2003<br>Posts: 356<br>Location: Poland, Sanok</span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17017#17017"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Oct 07, 2003 11:32 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17017"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Actually
+from the judge's reply it's not possible to tell whether abort() or
+terminate() function has been called. Terminate() is executed if an
+unhandled exception occurs.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1760"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=1760"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="17035"></a><b>BiK</b></span><br><span class="postdetails">A great helper<br><br><br>Joined: 23 Sep 2003<br>Posts: 109<br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17035#17035"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Oct 07, 2003 6:58 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17035"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Is
+it possible that I crammed so much my containers that the program went
+out of memory and an exception was thrown? And since this exception is
+unhandled, <span style="font-weight: bold;">terminate()</span> is called, and instead of getting MLE, I receive RTE?</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=2057"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=2057"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="17043"></a><b>Krzysztof Duleba</b></span><br><span class="postdetails">Guru<br><img src="9viewtopic.php_files/mini04.jpeg" alt="" border="0"><br><br>Joined: 19 Jun 2003<br>Posts: 356<br>Location: Poland, Sanok</span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17043#17043"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Oct 07, 2003 11:41 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17043"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Yes, it is possible. You can try to add
+<br>
+[cpp:1:417f980dcf]
+<br>
+#include &lt;cstdlib&gt;
+<br>
+
+<br>
+#define safe_insert(map,pair)\
+<br>
+try{map.insert(pair)}\
+<br>
+catch(bad_alloc)\
+<br>
+{\
+<br>
+      cout&lt;&lt;"out of memory"&lt;&lt;endl;\
+<br>
+      exit(1);\
+<br>
+}\
+<br>
+catch(...)\
+<br>
+{\
+<br>
+      cout&lt;&lt;"something else wend bad"&lt;&lt;endl;\
+<br>
+      exit(2);\
+<br>
+}
+<br>
+[/cpp:1:417f980dcf]
+<br>
+and use safe_insert(map_name, pair_name) instead of
+map_name.insert(pair_name) . It will help you to avoid unhandled
+exceptions. If OJ sends the error code, you will know what exactly has
+happened.[/cpp]</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1760"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=1760"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="17045"></a><b>BiK</b></span><br><span class="postdetails">A great helper<br><br><br>Joined: 23 Sep 2003<br>Posts: 109<br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17045#17045"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Oct 08, 2003 2:00 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17045"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Thanks
+a lot. I'll try what you wrote. But before I saw the message I tried to
+organize my database (db) and map (m) more space-efficiently. However I
+could not compile the following function which is very strange to me:
+<br>
+
+<br>
+[cpp:1:f3a711f0d0]typedef set&lt;string&gt;::iterator iter;
+<br>
+
+<br>
+set&lt;string&gt; allStrings;
+<br>
+
+<br>
+void vectorToSet(int k, vector&lt;string&gt; &amp;v, set&lt; iter &gt; &amp;s) {
+<br>
+    for(int i = 0; i &lt; v.size(); i++) 
+<br>
+        if (i != k) {
+<br>
+            iter it = allStrings.find(v[i]);
+<br>
+            s.insert(it);    //compile error here
+<br>
+        }
+<br>
+}[/cpp:1:f3a711f0d0]
+<br>
+
+<br>I decided that instead of keeping the strings in the containers
+(which I still think is not a problem since they are reference
+counted), I keep all the strings in the global <span style="font-weight: bold;">set&lt;string&gt;</span> variable <span style="font-weight: bold;">allStrings</span> and only iterators in the <span style="font-weight: bold;">database</span> (db), and the <span style="font-weight: bold;">map</span> (m). However, I could not compile the above excerpt. Any help please?</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=2057"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=2057"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="17077"></a><b>Krzysztof Duleba</b></span><br><span class="postdetails">Guru<br><img src="9viewtopic.php_files/mini04.jpeg" alt="" border="0"><br><br>Joined: 19 Jun 2003<br>Posts: 356<br>Location: Poland, Sanok</span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17077#17077"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Oct 08, 2003 10:53 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17077"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">You're
+trying to insert a vector iterator (which is actually an ordinary
+pointer to string) into set of strings. Won't work. T is not *T.
+<br>
+All the collections in STL _copy_ their elements. So you can have the following code working:
+<br>
+[cpp:1:4d04fee30c]
+<br>
+vector&lt;string&gt; v;
+<br>
+new string * s;
+<br>
+*s="asdf";
+<br>
+v.push_back(*s);
+<br>
+delete s;
+<br>
+cout&lt;&lt;v.front()&lt;&lt;endl;
+<br>
+[/cpp:1:4d04fee30c]
+<br>
+Now I see why you're getting out of memory <img src="9viewtopic.php_files/icon_smile.gif" alt="" border="0">
+<br>
+This version does what you need:
+<br>
+[cpp:1:4d04fee30c]
+<br>
+vector&lt;string *&gt; v;
+<br>
+new string * s;
+<br>
+*s="asdf";
+<br>
+v.push_back(s);
+<br>
+delete s;
+<br>
+cout&lt;&lt;v.front()&lt;&lt;endl;
+<br>
+[/cpp:1:4d04fee30c]</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1760"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=1760"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="17101"></a><b>BiK</b></span><br><span class="postdetails">A great helper<br><br><br>Joined: 23 Sep 2003<br>Posts: 109<br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17101#17101"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Oct 08, 2003 2:48 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17101"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">No you're wrong I try to insert <span style="font-weight: bold;">set&lt;string&gt;::iterator</span> into <span style="font-weight: bold;">set&lt;set&lt;string&gt;::iterator&gt;</span>. See the function <span style="font-weight: bold;">vectorToSet</span>. And it should be compiled.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=2057"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=2057"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="17103"></a><b>Adrian Kuegel</b></span><br><span class="postdetails">Guru<br><br><br>Joined: 19 Dec 2001<br>Posts: 635<br>Location: Germany</span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17103#17103"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Oct 08, 2003 3:14 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17103"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Try this:
+<br>
+[cpp:1:0f096f92d9]typedef set&lt;string&gt;::iterator iter; 
+<br>
+
+<br>
+struct mycomp {
+<br>
+	bool operator()(iter a, iter b) {
+<br>
+		return *a&lt;*b;
+<br>
+	}
+<br>
+};
+<br>
+
+<br>
+set&lt;string&gt; allStrings; 
+<br>
+
+<br>
+void vectorToSet(int k, vector&lt;string&gt; &amp;v, set&lt; iter,mycomp&gt; &amp;s) { 
+<br>
+    for(int i = 0; i &lt; v.size(); i++) 
+<br>
+        if (i != k) { 
+<br>
+            iter it = allStrings.find(v[i]);
+<br>
+	    s.insert(it); 
+<br>
+        } 
+<br>
+}
+<br>
+[/cpp:1:0f096f92d9]</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=117"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=117"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a> <a href="mailto:Adrian_Kuegel@gmx.de"><img src="9viewtopic.php_files/icon_email.gif" alt="Send e-mail" title="Send e-mail" border="0"></a>    <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="17104"></a><b>Krzysztof Duleba</b></span><br><span class="postdetails">Guru<br><img src="9viewtopic.php_files/mini04.jpeg" alt="" border="0"><br><br>Joined: 19 Jun 2003<br>Posts: 356<br>Location: Poland, Sanok</span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17104#17104"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Oct 08, 2003 3:25 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17104"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">You
+can make a set of objects only if they are comparable with &lt;. Set
+iterators are not. Try something like (works if all the strings are
+different)
+<br>
+[cpp:1:f0ce62fb19]
+<br>
+class cmp
+<br>
+{
+<br>
+    public:
+<br>
+    bool operator()(const set&lt;string&gt;::iterator &amp;i1, const set&lt;string&gt;::iterator &amp;i2)
+<br>
+    {
+<br>
+         return (*i1 &lt; *i2);
+<br>
+    }
+<br>
+};
+<br>
+
+<br>
+void vectorToString(int k, const vector&lt;string&gt; &amp;v, set&lt;set&lt;string&gt;::iterator, cmp&gt; &amp;s);
+<br>
+[/cpp:1:f0ce62fb19]</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=1760"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=1760"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="17116"></a><b>BiK</b></span><br><span class="postdetails">A great helper<br><br><br>Joined: 23 Sep 2003<br>Posts: 109<br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://online-judge.uva.es/board/viewtopic.php?p=17116#17116"><img src="9viewtopic.php_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Oct 08, 2003 8:17 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://online-judge.uva.es/board/posting.php?mode=quote&amp;p=17116"><img src="9viewtopic.php_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Thanks,
+really this was the problem. Now I compile the program but I get
+segment violation. I think it's because the
+set&lt;string&gt;::iterators get invalidated after an insertion in the
+set <span style="font-weight: bold;">allStrings</span>. 
+<br>
+
+<br>
+Since the problem statement (<span style="color: rgb(255, 163, 79);"><b>10044</b></span>
+- Erdos Numbers) does not specify any boundaries for the input, I
+thought that the perfect tool to use to solve the problem is STL. On
+the contrary it turned out a nightmare. Nevertheless I still want to
+make use of STL in at least one problem that I solved so please help me
+with any ideas.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://online-judge.uva.es/board/profile.php?mode=viewprofile&amp;u=2057"><img src="9viewtopic.php_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://online-judge.uva.es/board/privmsg.php?mode=post&amp;u=2057"><img src="9viewtopic.php_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="9viewtopic.php_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr align="center">
+		<td class="catBottom" colspan="2" height="28"><table border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr><form method="post" action="viewtopic.php?t=4086&amp;start=0"></form>
+				<td align="center"><span class="gensmall">Display posts from previous: <select name="postdays"><option value="0" selected="selected">All Posts</option><option value="1">1 Day</option><option value="7">7 Days</option><option value="14">2 Weeks</option><option value="30">1 Month</option><option value="90">3 Months</option><option value="180">6 Months</option><option value="364">1 Year</option></select>&nbsp;<select name="postorder"><option value="asc" selected="selected">Oldest First</option><option value="desc">Newest First</option></select>&nbsp;<input value="Go" class="liteoption" name="submit" type="submit"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table>
+
+<table align="center" border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="middle"><span class="nav"><a href="http://online-judge.uva.es/board/posting.php?mode=newtopic&amp;f=14"><img src="9viewtopic.php_files/post.gif" alt="Post new topic" align="middle" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="http://online-judge.uva.es/board/posting.php?mode=reply&amp;t=4086"><img src="9viewtopic.php_files/reply.gif" alt="Reply to topic" align="middle" border="0"></a></span></td>
+	<td align="left" valign="middle" width="100%"><span class="nav">&nbsp;&nbsp;&nbsp;<a href="http://online-judge.uva.es/board/index.php" class="nav">online-judge.uva.es Forum Index</a>
+	  -&gt; <a href="http://online-judge.uva.es/board/viewforum.php?f=14" class="nav">C++</a></span></td>
+	<td align="right" nowrap="nowrap" valign="top"><span class="gensmall">All times are GMT + 1 Hour</span><br><span class="nav"></span>
+	  </td>
+  </tr>
+  <tr>
+	<td colspan="3" align="left"><span class="nav">Page <b>1</b> of <b>1</b></span></td>
+  </tr>
+</tbody></table>
+
+<table align="center" border="0" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="top" width="40%"><span class="gensmall"></span><br>
+	  &nbsp;<br>
+	  </td>
+	<td align="right" nowrap="nowrap" valign="top">
+<form method="get" name="jumpbox" action="viewforum.php" onsubmit="if(document.jumpbox.f.value == -1){return false;}"><table border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to:&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Select a forum</option><option value="-1">&nbsp;</option><option value="-1">Real Time Contests and Last Minute Information</option><option value="-1">----------------</option><option value="18">Real Time Clarification</option><option value="26">Fixing Mistakes</option><option value="31">HOWTOs</option><option value="-1">&nbsp;</option><option value="-1">Let's make some programs!</option><option value="-1">----------------</option><option value="12">Other words</option><option value="22">Algorithms</option><option value="11">New features</option><option value="-1">&nbsp;</option><option value="-1">Help on the Problemset</option><option value="-1">----------------</option><option value="1">Volume I</option><option value="2">Volume II</option><option value="4">Volume III</option><option value="5">Volume IV</option><option value="6">Volume V</option><option value="7">Volume VI</option><option value="8">Volume VII</option><option value="21">Volume VIII</option><option value="9">Volume C</option><option value="10">Volume CI</option><option value="17">Volume CII</option><option value="20">Volume CIII</option><option value="23">Volume CIV</option><option value="25">Volume CV</option><option value="28">Volume CVI</option><option value="29">Volume CVII</option><option value="30">Volume CVIII</option><option value="-1">&nbsp;</option><option value="-1">Help on languages</option><option value="-1">----------------</option><option value="13">C</option><option value="14" selected="selected">C++</option><option value="15">Pascal</option><option value="16">Java</option><option value="-1">&nbsp;</option><option value="-1">Off Topic</option><option value="-1">----------------</option><option value="24">Off topic (General chit-chat)</option></select><input name="sid" value="539dd2135378a3ecbb21251c4a35cc8e" type="hidden">&nbsp;<input value="Go" class="liteoption" type="submit"></span></td>
+	</tr>
+</tbody></table></form>
+
+<span class="gensmall">You <b>cannot</b> post new topics in this forum<br>You <b>cannot</b> reply to topics in this forum<br>You <b>cannot</b> edit your posts in this forum<br>You <b>cannot</b> delete your posts in this forum<br>You <b>cannot</b> vote in polls in this forum<br></span></td>
+  </tr>
+</tbody></table>
+
+
+<div align="center"><span class="copyright"><br><br>
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB 2.0. If you cannot (for good
+	reason) retain the full copyright we request you at least leave in place the
+	Powered by phpBB line, with phpBB linked to www.phpbb.com. If you refuse
+	to include even this then support on our forums may be affected.
+
+	The phpBB Group : 2002
+// -->
+Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a> © 2001, 2005 phpBB Group<br></span></div>
+		</td>
+	</tr>
+</tbody></table>
+
+</body></html>

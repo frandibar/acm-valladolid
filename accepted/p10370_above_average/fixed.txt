@@ -1,0 +1,12 @@
+printf("%.3lf%%\n",(double)cnt/(double)tot*100);
+
+%.3lf%% (40.000%)
+
+
+ std::cout.setf(std::ios::fixed);
+std::cout.precision(4);
+
+You will probably also want to use
+C++:
+std::cout.setf(std::ios::showpoint);
+

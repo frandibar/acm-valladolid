@@ -1,0 +1,4 @@
+hay 2 versiones de este problema:
+Little Bishops con 1 <= n <= 8 (programming challenges)
+Bishops con con 1 <= n <= 30
+

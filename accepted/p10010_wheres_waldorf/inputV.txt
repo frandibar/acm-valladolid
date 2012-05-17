@@ -1,0 +1,12 @@
+1
+
+5 7
+ooooAoA
+oAooAoA
+oAooooo
+ooooAoo
+ooooAoo
+
+1
+aa
+

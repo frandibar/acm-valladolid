@@ -1,0 +1,17 @@
+It seems there is a lot of guessing going on about the input format.
+Whether there is extra spaces before, after and within author names.
+There is nothing like that. Input is precisely like that of sample
+
+
+The Judge input is correct except that there are person names with no initials!
+These persons always appear at the end of the list of authors and can be ignored. 
+For example:
+Smith, M.N., Chen, X., Johnson: Introduction to Algorithms
+>> Ignore Johnson in this case.
+
+Smith, M.N., Chen, X., Johnson, I.R.: Introduction to Algorithms
+>> Don't ignore Johnson, I.R.
+
+
+I was assuming that the first char of the author's name was always upper case.
+Apparently it can be upper, lower or can even be any other char...

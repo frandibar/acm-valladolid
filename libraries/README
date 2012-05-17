@@ -1,0 +1,4 @@
+Feb  2 2009
+add const to operators to avoid 
+(a*b) = c
+see item 21 effective c++, use const whenever possible
